@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['latitude',['latitude',['../classWildlifeTrackingApp_1_1Models_1_1TrackingInfo.html#a76714bdbc5c536fa77dfb14533ff82a9',1,'WildlifeTrackingApp::Models::TrackingInfo']]],
+  ['leaf',['leaf',['../classWildlifeTrackingApp_1_1Properties_1_1Resources.html#ada97aa4495af0cb5098a56ffbf0f858d',1,'WildlifeTrackingApp::Properties::Resources']]],
+  ['leaf1',['leaf1',['../classWildlifeTrackingApp_1_1Properties_1_1Resources.html#adec538f2d25807e5bde6e710a7ba6204',1,'WildlifeTrackingApp::Properties::Resources']]],
+  ['light_5fgreen',['light_green',['../classWildlifeTrackingApp_1_1Properties_1_1Resources.html#a9d50b18360e8349f940ae5562791c430',1,'WildlifeTrackingApp::Properties::Resources']]],
+  ['light_5fgreen_5fbackground_5f2',['light_green_background_2',['../classWildlifeTrackingApp_1_1Properties_1_1Resources.html#abb170f035e4e40293fc18a5ae75104c0',1,'WildlifeTrackingApp::Properties::Resources']]],
+  ['log',['Log',['../classWildlifeTrackingApp_1_1Add__GPS.html#a5fc9abb86e6110ecd61d0a1a7d740a8a',1,'WildlifeTrackingApp.Add_GPS.Log()'],['../classWildlifeTrackingApp_1_1AddCategory.html#a5fc9abb86e6110ecd61d0a1a7d740a8a',1,'WildlifeTrackingApp.AddCategory.Log()'],['../classWildlifeTrackingApp_1_1Category.html#a5fc9abb86e6110ecd61d0a1a7d740a8a',1,'WildlifeTrackingApp.Category.Log()'],['../classWildlifeTrackingApp_1_1GPSDevice.html#a5fc9abb86e6110ecd61d0a1a7d740a8a',1,'WildlifeTrackingApp.GPSDevice.Log()'],['../classWildlifeTrackingApp_1_1LocateCategory.html#a5fc9abb86e6110ecd61d0a1a7d740a8a',1,'WildlifeTrackingApp.LocateCategory.Log()'],['../classWildlifeTrackingApp_1_1MainPage.html#a5fc9abb86e6110ecd61d0a1a7d740a8a',1,'WildlifeTrackingApp.MainPage.Log()'],['../classWildlifeTrackingApp_1_1PopUp.html#a5fc9abb86e6110ecd61d0a1a7d740a8a',1,'WildlifeTrackingApp.PopUp.Log()'],['../classWildlifeTrackingApp_1_1Report.html#a5fc9abb86e6110ecd61d0a1a7d740a8a',1,'WildlifeTrackingApp.Report.Log()']]],
+  ['longitude',['longitude',['../classWildlifeTrackingApp_1_1Models_1_1TrackingInfo.html#ac155e35fdeebafc89723a51520fb9fe6',1,'WildlifeTrackingApp::Models::TrackingInfo']]]
+];

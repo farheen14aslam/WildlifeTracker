@@ -1,0 +1,198 @@
+\hypertarget{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil}{}\section{Http\+Util}
+\label{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil}\index{Http\+Util@{Http\+Util}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a52cfcc90781b77268cfe7039e8fbc0d5}{Http\+Delete\+Request} (string url)
+\begin{DoxyCompactList}\small\item\em Get H\+T\+TP D\+E\+L\+E\+TE Request. \end{DoxyCompactList}\item 
+static string \hyperlink{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_acf6038d387a08540e3edd75cfe40d2dd}{Http\+Get\+Request} (string url)
+\begin{DoxyCompactList}\small\item\em Get H\+T\+TP G\+ET Request. \end{DoxyCompactList}\item 
+static string \hyperlink{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a1bfc4f28acf513814c5c63ee2d8d93bc}{Http\+Post\+Request} (string url, string request\+Body)
+\begin{DoxyCompactList}\small\item\em Get H\+T\+TP P\+O\+ST Request. \end{DoxyCompactList}\item 
+static string \hyperlink{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a2f85f442be7b52b26de24a9ac7c86665}{Http\+Put\+Request} (string url, string request\+Body)
+\begin{DoxyCompactList}\small\item\em Get H\+T\+TP P\+UT Request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Http\+Web\+Request \hyperlink{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a6899e5d7ebdcb05fc36e7a579c5b8e97}{Create\+Http\+Delete\+Query} (string url)
+\begin{DoxyCompactList}\small\item\em Gets the Http\+Web\+Request for D\+E\+L\+E\+TE Method. \end{DoxyCompactList}\item 
+static Http\+Web\+Request \hyperlink{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a1f86d667d86279bb3acaa93b36fc4ba1}{Create\+Http\+Post\+Query} (string url)
+\begin{DoxyCompactList}\small\item\em Gets the Http\+Web\+Request for P\+O\+ST Method. \end{DoxyCompactList}\item 
+static Http\+Web\+Request \hyperlink{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_afcce3cdfd6d09ae71bac6fb4039fb912}{Create\+Http\+Put\+Query} (string url)
+\begin{DoxyCompactList}\small\item\em Gets the Http\+Web\+Request for P\+UT Method. \end{DoxyCompactList}\item 
+static Http\+Web\+Request \hyperlink{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a4a1b80ad5a1cebbdd0380f4881fa5167}{Create\+Http\+Query} (string url)
+\begin{DoxyCompactList}\small\item\em Gets the Http\+Web\+Request for G\+ET Method. \end{DoxyCompactList}\item 
+static string \hyperlink{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_aa05c03695bc80bba86ecb6305eae2fc2}{get\+Response\+String} (Http\+Web\+Response response)
+\begin{DoxyCompactList}\small\item\em Gets the Http\+Web\+Request for G\+ET Method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a6899e5d7ebdcb05fc36e7a579c5b8e97}\label{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a6899e5d7ebdcb05fc36e7a579c5b8e97}} 
+\index{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}!Create\+Http\+Delete\+Query@{Create\+Http\+Delete\+Query}}
+\index{Create\+Http\+Delete\+Query@{Create\+Http\+Delete\+Query}!Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}}
+\subsubsection{\texorpdfstring{Create\+Http\+Delete\+Query()}{CreateHttpDeleteQuery()}}
+{\footnotesize\ttfamily static Http\+Web\+Request Create\+Http\+Delete\+Query (\begin{DoxyParamCaption}\item[{string}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the Http\+Web\+Request for D\+E\+L\+E\+TE Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL to process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Http\+Web\+Request
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a1f86d667d86279bb3acaa93b36fc4ba1}\label{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a1f86d667d86279bb3acaa93b36fc4ba1}} 
+\index{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}!Create\+Http\+Post\+Query@{Create\+Http\+Post\+Query}}
+\index{Create\+Http\+Post\+Query@{Create\+Http\+Post\+Query}!Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}}
+\subsubsection{\texorpdfstring{Create\+Http\+Post\+Query()}{CreateHttpPostQuery()}}
+{\footnotesize\ttfamily static Http\+Web\+Request Create\+Http\+Post\+Query (\begin{DoxyParamCaption}\item[{string}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the Http\+Web\+Request for P\+O\+ST Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL to process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Http\+Web\+Request
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_afcce3cdfd6d09ae71bac6fb4039fb912}\label{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_afcce3cdfd6d09ae71bac6fb4039fb912}} 
+\index{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}!Create\+Http\+Put\+Query@{Create\+Http\+Put\+Query}}
+\index{Create\+Http\+Put\+Query@{Create\+Http\+Put\+Query}!Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}}
+\subsubsection{\texorpdfstring{Create\+Http\+Put\+Query()}{CreateHttpPutQuery()}}
+{\footnotesize\ttfamily static Http\+Web\+Request Create\+Http\+Put\+Query (\begin{DoxyParamCaption}\item[{string}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the Http\+Web\+Request for P\+UT Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL to process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Http\+Web\+Request
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a4a1b80ad5a1cebbdd0380f4881fa5167}\label{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a4a1b80ad5a1cebbdd0380f4881fa5167}} 
+\index{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}!Create\+Http\+Query@{Create\+Http\+Query}}
+\index{Create\+Http\+Query@{Create\+Http\+Query}!Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}}
+\subsubsection{\texorpdfstring{Create\+Http\+Query()}{CreateHttpQuery()}}
+{\footnotesize\ttfamily static Http\+Web\+Request Create\+Http\+Query (\begin{DoxyParamCaption}\item[{string}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the Http\+Web\+Request for G\+ET Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL to process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Http\+Web\+Request
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_aa05c03695bc80bba86ecb6305eae2fc2}\label{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_aa05c03695bc80bba86ecb6305eae2fc2}} 
+\index{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}!get\+Response\+String@{get\+Response\+String}}
+\index{get\+Response\+String@{get\+Response\+String}!Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}}
+\subsubsection{\texorpdfstring{get\+Response\+String()}{getResponseString()}}
+{\footnotesize\ttfamily static string get\+Response\+String (\begin{DoxyParamCaption}\item[{Http\+Web\+Response}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the Http\+Web\+Request for G\+ET Method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & The U\+RL to process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response in string
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a52cfcc90781b77268cfe7039e8fbc0d5}\label{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a52cfcc90781b77268cfe7039e8fbc0d5}} 
+\index{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}!Http\+Delete\+Request@{Http\+Delete\+Request}}
+\index{Http\+Delete\+Request@{Http\+Delete\+Request}!Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}}
+\subsubsection{\texorpdfstring{Http\+Delete\+Request()}{HttpDeleteRequest()}}
+{\footnotesize\ttfamily static string Http\+Delete\+Request (\begin{DoxyParamCaption}\item[{string}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get H\+T\+TP D\+E\+L\+E\+TE Request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL to process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response string
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_acf6038d387a08540e3edd75cfe40d2dd}\label{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_acf6038d387a08540e3edd75cfe40d2dd}} 
+\index{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}!Http\+Get\+Request@{Http\+Get\+Request}}
+\index{Http\+Get\+Request@{Http\+Get\+Request}!Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}}
+\subsubsection{\texorpdfstring{Http\+Get\+Request()}{HttpGetRequest()}}
+{\footnotesize\ttfamily static string Http\+Get\+Request (\begin{DoxyParamCaption}\item[{string}]{url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get H\+T\+TP G\+ET Request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL to process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response string
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a1bfc4f28acf513814c5c63ee2d8d93bc}\label{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a1bfc4f28acf513814c5c63ee2d8d93bc}} 
+\index{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}!Http\+Post\+Request@{Http\+Post\+Request}}
+\index{Http\+Post\+Request@{Http\+Post\+Request}!Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}}
+\subsubsection{\texorpdfstring{Http\+Post\+Request()}{HttpPostRequest()}}
+{\footnotesize\ttfamily static string Http\+Post\+Request (\begin{DoxyParamCaption}\item[{string}]{url,  }\item[{string}]{request\+Body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get H\+T\+TP P\+O\+ST Request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL to process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response string
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a2f85f442be7b52b26de24a9ac7c86665}\label{classWildlifeTrackingApp_1_1Utility_1_1HttpUtil_a2f85f442be7b52b26de24a9ac7c86665}} 
+\index{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}!Http\+Put\+Request@{Http\+Put\+Request}}
+\index{Http\+Put\+Request@{Http\+Put\+Request}!Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util@{Wildlife\+Tracking\+App\+::\+Utility\+::\+Http\+Util}}
+\subsubsection{\texorpdfstring{Http\+Put\+Request()}{HttpPutRequest()}}
+{\footnotesize\ttfamily static string Http\+Put\+Request (\begin{DoxyParamCaption}\item[{string}]{url,  }\item[{string}]{request\+Body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get H\+T\+TP P\+UT Request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The U\+RL to process\\
+\hline
+{\em request\+Body} & The request body\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The response string
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Utility/\hyperlink{HttpUtil_8cs}{Http\+Util.\+cs}\end{DoxyCompactItemize}

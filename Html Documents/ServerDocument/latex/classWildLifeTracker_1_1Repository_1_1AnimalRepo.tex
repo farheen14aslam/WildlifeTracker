@@ -1,0 +1,216 @@
+\hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo}{}\section{Animal\+Repo}
+\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo}\index{Animal\+Repo@{Animal\+Repo}}
+
+
+The class is used to fetch the animals details from DB or save it in the DB  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal} \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a8242d740e31fff58cf32f374c7d35672}{Create\+New\+Animal} (\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal} animal\+Details)
+\begin{DoxyCompactList}\small\item\em Add a new animal \end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal} \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo_aaa8df32c561515cee5569a3bbf1d82d9}{Delete\+Animal} (string animal\+Id)
+\begin{DoxyCompactList}\small\item\em Deletes animal details \end{DoxyCompactList}\item 
+List$<$ \hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal} $>$ \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a3acde68faeb372aa2cc1845f59e5e610}{Retrieve\+All\+Animals} ()
+\begin{DoxyCompactList}\small\item\em Retrieves all the animals \end{DoxyCompactList}\item 
+List$<$ \hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal} $>$ \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a6a5e54dd241692cd249e470b225a3931}{Retrieve\+Animal\+Details\+Per\+Category} (string category\+Id)
+\begin{DoxyCompactList}\small\item\em Retrieves animal details per category \end{DoxyCompactList}\item 
+List$<$ \hyperlink{classWildLifeTracker_1_1Models_1_1AnimalCount}{Animal\+Count} $>$ \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo_aec46c9c1a5c50fd399cce98f12e2c6df}{Retrieve\+Animals\+Count\+Per\+Category} (string from\+Date, string to\+Date)
+\begin{DoxyCompactList}\small\item\em Retrieves animal count per category \end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal} \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a2b873c47d97ceb29023685a8c6b05e6a}{Update\+Animal} (\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal} animal\+Details)
+\begin{DoxyCompactList}\small\item\em Updates an animal details \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo}{Animal\+Repo} \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a99d395bc410e71a931859b7832df18d8}{get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static log4net.\+I\+Log \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a5fc9abb86e6110ecd61d0a1a7d740a8a}{Log}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a87ae250b13d1507332ef5eaade93de91}{Animal\+Repo} ()
+\begin{DoxyCompactList}\small\item\em Constructor that intialize log4net in class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo}{Animal\+Repo} \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a2c0ef2ce85fcac623e1483de4af6be26}{instance} = null
+\item 
+static object \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a38ff5bc3c19841e1e23deb0481c9816c}{lock\+Obj} = new Object()
+\item 
+static readonly log4net.\+I\+Log \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo_ae6c6142b8525b2f4ac6ee6e003b3106f}{log}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class is used to fetch the animals details from DB or save it in the DB 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a87ae250b13d1507332ef5eaade93de91}\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a87ae250b13d1507332ef5eaade93de91}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}!Animal\+Repo@{Animal\+Repo}}
+\index{Animal\+Repo@{Animal\+Repo}!Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}}
+\subsubsection{\texorpdfstring{Animal\+Repo()}{AnimalRepo()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo}{Animal\+Repo} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Constructor that intialize log4net in class 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a8242d740e31fff58cf32f374c7d35672}\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a8242d740e31fff58cf32f374c7d35672}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}!Create\+New\+Animal@{Create\+New\+Animal}}
+\index{Create\+New\+Animal@{Create\+New\+Animal}!Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}}
+\subsubsection{\texorpdfstring{Create\+New\+Animal()}{CreateNewAnimal()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal} Create\+New\+Animal (\begin{DoxyParamCaption}\item[{\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal}}]{animal\+Details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new animal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal\+Details} & The animal details\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the details of animal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo_aaa8df32c561515cee5569a3bbf1d82d9}\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo_aaa8df32c561515cee5569a3bbf1d82d9}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}!Delete\+Animal@{Delete\+Animal}}
+\index{Delete\+Animal@{Delete\+Animal}!Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}}
+\subsubsection{\texorpdfstring{Delete\+Animal()}{DeleteAnimal()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal} Delete\+Animal (\begin{DoxyParamCaption}\item[{string}]{animal\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deletes animal details 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal\+Id} & The animal Id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The details of deleted animal
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a99d395bc410e71a931859b7832df18d8}\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a99d395bc410e71a931859b7832df18d8}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo}{Animal\+Repo} get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a3acde68faeb372aa2cc1845f59e5e610}\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a3acde68faeb372aa2cc1845f59e5e610}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}!Retrieve\+All\+Animals@{Retrieve\+All\+Animals}}
+\index{Retrieve\+All\+Animals@{Retrieve\+All\+Animals}!Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}}
+\subsubsection{\texorpdfstring{Retrieve\+All\+Animals()}{RetrieveAllAnimals()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal}$>$ Retrieve\+All\+Animals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves all the animals 
+
+\begin{DoxyReturn}{Returns}
+List of animals 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a6a5e54dd241692cd249e470b225a3931}\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a6a5e54dd241692cd249e470b225a3931}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}!Retrieve\+Animal\+Details\+Per\+Category@{Retrieve\+Animal\+Details\+Per\+Category}}
+\index{Retrieve\+Animal\+Details\+Per\+Category@{Retrieve\+Animal\+Details\+Per\+Category}!Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}}
+\subsubsection{\texorpdfstring{Retrieve\+Animal\+Details\+Per\+Category()}{RetrieveAnimalDetailsPerCategory()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal}$>$ Retrieve\+Animal\+Details\+Per\+Category (\begin{DoxyParamCaption}\item[{string}]{category\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves animal details per category 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & The category\+Id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The list of Animals
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo_aec46c9c1a5c50fd399cce98f12e2c6df}\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo_aec46c9c1a5c50fd399cce98f12e2c6df}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}!Retrieve\+Animals\+Count\+Per\+Category@{Retrieve\+Animals\+Count\+Per\+Category}}
+\index{Retrieve\+Animals\+Count\+Per\+Category@{Retrieve\+Animals\+Count\+Per\+Category}!Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}}
+\subsubsection{\texorpdfstring{Retrieve\+Animals\+Count\+Per\+Category()}{RetrieveAnimalsCountPerCategory()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classWildLifeTracker_1_1Models_1_1AnimalCount}{Animal\+Count}$>$ Retrieve\+Animals\+Count\+Per\+Category (\begin{DoxyParamCaption}\item[{string}]{from\+Date,  }\item[{string}]{to\+Date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves animal count per category 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal\+Details} & The animal details to be deleted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The details of updated animal
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a2b873c47d97ceb29023685a8c6b05e6a}\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a2b873c47d97ceb29023685a8c6b05e6a}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}!Update\+Animal@{Update\+Animal}}
+\index{Update\+Animal@{Update\+Animal}!Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}}
+\subsubsection{\texorpdfstring{Update\+Animal()}{UpdateAnimal()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal} Update\+Animal (\begin{DoxyParamCaption}\item[{\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal}}]{animal\+Details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates an animal details 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal\+Details} & The animal details to be deleted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The details of updated animal
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a2c0ef2ce85fcac623e1483de4af6be26}\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a2c0ef2ce85fcac623e1483de4af6be26}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}!instance@{instance}}
+\index{instance@{instance}!Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Repository_1_1AnimalRepo}{Animal\+Repo} instance = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a38ff5bc3c19841e1e23deb0481c9816c}\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a38ff5bc3c19841e1e23deb0481c9816c}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}!lock\+Obj@{lock\+Obj}}
+\index{lock\+Obj@{lock\+Obj}!Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}}
+\subsubsection{\texorpdfstring{lock\+Obj}{lockObj}}
+{\footnotesize\ttfamily object lock\+Obj = new Object()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo_ae6c6142b8525b2f4ac6ee6e003b3106f}\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo_ae6c6142b8525b2f4ac6ee6e003b3106f}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}!log@{log}}
+\index{log@{log}!Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily readonly log4net.\+I\+Log log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= log4net.LogManager.GetLogger
+       (\hyperlink{namespaceSystem}{System}.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a5fc9abb86e6110ecd61d0a1a7d740a8a}\label{classWildLifeTracker_1_1Repository_1_1AnimalRepo_a5fc9abb86e6110ecd61d0a1a7d740a8a}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}!Log@{Log}}
+\index{Log@{Log}!Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Animal\+Repo}}
+\subsubsection{\texorpdfstring{Log}{Log}}
+{\footnotesize\ttfamily log4net.\+I\+Log Log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wild\+Life\+Tracker/\+Repository/\hyperlink{AnimalRepo_8cs}{Animal\+Repo.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,100 @@
+\hypertarget{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate}{}\section{Animal\+Delegate}
+\label{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate}\index{Animal\+Delegate@{Animal\+Delegate}}
+
+
+Class that calls server for adding new animal, getting animal details.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal} \hyperlink{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate_a57a5b0f9728b68e90dd1aa38ebd9df14}{Add\+New\+Animal} (\hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal} animal\+Details)
+\begin{DoxyCompactList}\small\item\em Post call for adding new animal to the database. \end{DoxyCompactList}\item 
+static \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal} \hyperlink{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate_a9261f08d6ea296a3ea3b63256c299770}{Delete\+Animal} (int animal\+Id)
+\begin{DoxyCompactList}\small\item\em Delete request for deleting the details of a particular animal. \end{DoxyCompactList}\item 
+static List$<$ \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal} $>$ \hyperlink{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate_acdcd9b138229c5e197e45cdad4025bad}{Get\+All\+Animals\+Allocated} ()
+\begin{DoxyCompactList}\small\item\em Get call for getting the details of all animals. \end{DoxyCompactList}\item 
+static List$<$ \hyperlink{classWildlifeTrackingApp_1_1Models_1_1AnimalCategoryCount}{Models.\+Animal\+Category\+Count} $>$ \hyperlink{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate_a2fd0ae1a6560b820addb282b1e6e4ad3}{Get\+Animals\+Count\+Per\+Category} (string from\+Date, string to\+Date)
+\begin{DoxyCompactList}\small\item\em Get call for getting total count of all animals per category. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that calls server for adding new animal, getting animal details. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate_a57a5b0f9728b68e90dd1aa38ebd9df14}\label{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate_a57a5b0f9728b68e90dd1aa38ebd9df14}} 
+\index{Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate@{Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate}!Add\+New\+Animal@{Add\+New\+Animal}}
+\index{Add\+New\+Animal@{Add\+New\+Animal}!Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate@{Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate}}
+\subsubsection{\texorpdfstring{Add\+New\+Animal()}{AddNewAnimal()}}
+{\footnotesize\ttfamily static \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal} Add\+New\+Animal (\begin{DoxyParamCaption}\item[{\hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal}}]{animal\+Details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Post call for adding new animal to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal\+Details} & Instances of \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return instance of \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate_a9261f08d6ea296a3ea3b63256c299770}\label{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate_a9261f08d6ea296a3ea3b63256c299770}} 
+\index{Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate@{Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate}!Delete\+Animal@{Delete\+Animal}}
+\index{Delete\+Animal@{Delete\+Animal}!Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate@{Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate}}
+\subsubsection{\texorpdfstring{Delete\+Animal()}{DeleteAnimal()}}
+{\footnotesize\ttfamily static \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal} Delete\+Animal (\begin{DoxyParamCaption}\item[{int}]{animal\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Delete request for deleting the details of a particular animal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal\+Id} & Id of animal\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return instance of \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate_acdcd9b138229c5e197e45cdad4025bad}\label{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate_acdcd9b138229c5e197e45cdad4025bad}} 
+\index{Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate@{Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate}!Get\+All\+Animals\+Allocated@{Get\+All\+Animals\+Allocated}}
+\index{Get\+All\+Animals\+Allocated@{Get\+All\+Animals\+Allocated}!Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate@{Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate}}
+\subsubsection{\texorpdfstring{Get\+All\+Animals\+Allocated()}{GetAllAnimalsAllocated()}}
+{\footnotesize\ttfamily static List$<$\hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal}$>$ Get\+All\+Animals\+Allocated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get call for getting the details of all animals. 
+
+\begin{DoxyReturn}{Returns}
+Return list of instances of \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate_a2fd0ae1a6560b820addb282b1e6e4ad3}\label{classWildlifeTrackingApp_1_1Delegates_1_1AnimalDelegate_a2fd0ae1a6560b820addb282b1e6e4ad3}} 
+\index{Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate@{Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate}!Get\+Animals\+Count\+Per\+Category@{Get\+Animals\+Count\+Per\+Category}}
+\index{Get\+Animals\+Count\+Per\+Category@{Get\+Animals\+Count\+Per\+Category}!Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate@{Wildlife\+Tracking\+App\+::\+Delegates\+::\+Animal\+Delegate}}
+\subsubsection{\texorpdfstring{Get\+Animals\+Count\+Per\+Category()}{GetAnimalsCountPerCategory()}}
+{\footnotesize\ttfamily static List$<$\hyperlink{classWildlifeTrackingApp_1_1Models_1_1AnimalCategoryCount}{Models.\+Animal\+Category\+Count}$>$ Get\+Animals\+Count\+Per\+Category (\begin{DoxyParamCaption}\item[{string}]{from\+Date,  }\item[{string}]{to\+Date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get call for getting total count of all animals per category. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from\+Date} & From date\\
+\hline
+{\em to\+Date} & To date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return instance of \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal}
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Delegates/\hyperlink{AnimalDelegate_8cs}{Animal\+Delegate.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,286 @@
+\hypertarget{classWildlifeTrackingApp_1_1Category}{}\section{Category}
+\label{classWildlifeTrackingApp_1_1Category}\index{Category@{Category}}
+
+
+Form class for showing the list of all categories, adding new category, deleting and editing category.  
+
+
+Inheritance diagram for Category\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWildlifeTrackingApp_1_1Category}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildlifeTrackingApp_1_1Category_a0e526c1d022adf4f003029e995a50ff7}{Category} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classWildlifeTrackingApp_1_1Category_aad96a74a8e07bceb571a64a3355b779d}{selected\+Row}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{classWildlifeTrackingApp_1_1Category_a849c3c7f8d08104f0cdb46bee9fe6389}{Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static log4net.\+I\+Log \hyperlink{classWildlifeTrackingApp_1_1Category_a5fc9abb86e6110ecd61d0a1a7d740a8a}{Log}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classWildlifeTrackingApp_1_1Category_ae56b21bee08f5cad9858a264ccc21fd5}{add\+\_\+button\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for add button click. It accept data and send it to server. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1Category_ad88debab69dc59b9a3bc2bdd89b1e4f9}{Category\+\_\+\+Activated} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for activation of form. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1Category_af87e0d54e9971bfe9ccba3a85841f619}{data\+Grid} ()
+\begin{DoxyCompactList}\small\item\em It loads data to datagrid view. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1Category_a28f46cdb401c2c8da3f8e117eaedf977}{delete\+\_\+button\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for delete button click. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1Category_adef76d49a202d1276ec8ca56b5b0bd3b}{edit\+\_\+button\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for edit button click. \end{DoxyCompactList}\item 
+\hyperlink{classWildlifeTrackingApp_1_1Models_1_1Category}{Models.\+Category} \hyperlink{classWildlifeTrackingApp_1_1Category_ad0b8994ac9ba019fb7cd6564e0ce4234}{Get\+Category} (string category\+Name, string category\+Color, string category\+Desc)
+\item 
+Data\+Table \hyperlink{classWildlifeTrackingApp_1_1Category_a8e22ded5eb81e2790b567eb19d3fe373}{Get\+R\+E\+S\+T\+Data} ()
+\begin{DoxyCompactList}\small\item\em Collects categroy details and saves as a datatable. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1Category_a6405d5db675d5338663195a4d12b4c9f}{Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+System.\+Windows.\+Forms.\+Button \hyperlink{classWildlifeTrackingApp_1_1Category_a7f1dbd5813451728f923cb88a3469cb6}{add\+\_\+button}
+\item 
+List$<$ \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Category}{Models.\+Category} $>$ \hyperlink{classWildlifeTrackingApp_1_1Category_a02effa079a870eac99d658ab96077499}{all\+Category\+Details}
+\item 
+System.\+Windows.\+Forms.\+Data\+Grid\+View \hyperlink{classWildlifeTrackingApp_1_1Category_aca0b56eba54545e931661b3e3661c34b}{category\+\_\+data\+Grid\+View}
+\item 
+Data\+Table \hyperlink{classWildlifeTrackingApp_1_1Category_a205fdcaba6d0c0047179a287f02825cf}{category\+Detail}
+\item 
+System.\+Component\+Model.\+I\+Container \hyperlink{classWildlifeTrackingApp_1_1Category_a02595f1c09713bb71dcb2fbbfc7ffa4b}{components} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+System.\+Windows.\+Forms.\+Button \hyperlink{classWildlifeTrackingApp_1_1Category_a84dcb7863c4f709001a644ff98f22414}{delete\+\_\+button}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly log4net.\+I\+Log \hyperlink{classWildlifeTrackingApp_1_1Category_ae6c6142b8525b2f4ac6ee6e003b3106f}{log}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Form class for showing the list of all categories, adding new category, deleting and editing category. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_a0e526c1d022adf4f003029e995a50ff7}\label{classWildlifeTrackingApp_1_1Category_a0e526c1d022adf4f003029e995a50ff7}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!Category@{Category}}
+\index{Category@{Category}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{Category()}{Category()}}
+{\footnotesize\ttfamily \hyperlink{classWildlifeTrackingApp_1_1Category}{Category} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_ae56b21bee08f5cad9858a264ccc21fd5}\label{classWildlifeTrackingApp_1_1Category_ae56b21bee08f5cad9858a264ccc21fd5}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!add\+\_\+button\+\_\+\+Click@{add\+\_\+button\+\_\+\+Click}}
+\index{add\+\_\+button\+\_\+\+Click@{add\+\_\+button\+\_\+\+Click}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{add\+\_\+button\+\_\+\+Click()}{add\_button\_Click()}}
+{\footnotesize\ttfamily void add\+\_\+button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for add button click. It accept data and send it to server. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_ad88debab69dc59b9a3bc2bdd89b1e4f9}\label{classWildlifeTrackingApp_1_1Category_ad88debab69dc59b9a3bc2bdd89b1e4f9}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!Category\+\_\+\+Activated@{Category\+\_\+\+Activated}}
+\index{Category\+\_\+\+Activated@{Category\+\_\+\+Activated}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{Category\+\_\+\+Activated()}{Category\_Activated()}}
+{\footnotesize\ttfamily void Category\+\_\+\+Activated (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for activation of form. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event Argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_af87e0d54e9971bfe9ccba3a85841f619}\label{classWildlifeTrackingApp_1_1Category_af87e0d54e9971bfe9ccba3a85841f619}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!data\+Grid@{data\+Grid}}
+\index{data\+Grid@{data\+Grid}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{data\+Grid()}{dataGrid()}}
+{\footnotesize\ttfamily void data\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+It loads data to datagrid view. 
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_a28f46cdb401c2c8da3f8e117eaedf977}\label{classWildlifeTrackingApp_1_1Category_a28f46cdb401c2c8da3f8e117eaedf977}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!delete\+\_\+button\+\_\+\+Click@{delete\+\_\+button\+\_\+\+Click}}
+\index{delete\+\_\+button\+\_\+\+Click@{delete\+\_\+button\+\_\+\+Click}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{delete\+\_\+button\+\_\+\+Click()}{delete\_button\_Click()}}
+{\footnotesize\ttfamily void delete\+\_\+button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for delete button click. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_a849c3c7f8d08104f0cdb46bee9fe6389}\label{classWildlifeTrackingApp_1_1Category_a849c3c7f8d08104f0cdb46bee9fe6389}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_adef76d49a202d1276ec8ca56b5b0bd3b}\label{classWildlifeTrackingApp_1_1Category_adef76d49a202d1276ec8ca56b5b0bd3b}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!edit\+\_\+button\+\_\+\+Click@{edit\+\_\+button\+\_\+\+Click}}
+\index{edit\+\_\+button\+\_\+\+Click@{edit\+\_\+button\+\_\+\+Click}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{edit\+\_\+button\+\_\+\+Click()}{edit\_button\_Click()}}
+{\footnotesize\ttfamily void edit\+\_\+button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for edit button click. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_ad0b8994ac9ba019fb7cd6564e0ce4234}\label{classWildlifeTrackingApp_1_1Category_ad0b8994ac9ba019fb7cd6564e0ce4234}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!Get\+Category@{Get\+Category}}
+\index{Get\+Category@{Get\+Category}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{Get\+Category()}{GetCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Category}{Models.\+Category} Get\+Category (\begin{DoxyParamCaption}\item[{string}]{category\+Name,  }\item[{string}]{category\+Color,  }\item[{string}]{category\+Desc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_a8e22ded5eb81e2790b567eb19d3fe373}\label{classWildlifeTrackingApp_1_1Category_a8e22ded5eb81e2790b567eb19d3fe373}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!Get\+R\+E\+S\+T\+Data@{Get\+R\+E\+S\+T\+Data}}
+\index{Get\+R\+E\+S\+T\+Data@{Get\+R\+E\+S\+T\+Data}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{Get\+R\+E\+S\+T\+Data()}{GetRESTData()}}
+{\footnotesize\ttfamily Data\+Table Get\+R\+E\+S\+T\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Collects categroy details and saves as a datatable. 
+
+\begin{DoxyReturn}{Returns}
+Returns category data as datatable
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_a6405d5db675d5338663195a4d12b4c9f}\label{classWildlifeTrackingApp_1_1Category_a6405d5db675d5338663195a4d12b4c9f}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!Initialize\+Component@{Initialize\+Component}}
+\index{Initialize\+Component@{Initialize\+Component}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{Initialize\+Component()}{InitializeComponent()}}
+{\footnotesize\ttfamily void Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Required method for Designer support -\/ do not modify the contents of this method with the code editor. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_a7f1dbd5813451728f923cb88a3469cb6}\label{classWildlifeTrackingApp_1_1Category_a7f1dbd5813451728f923cb88a3469cb6}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!add\+\_\+button@{add\+\_\+button}}
+\index{add\+\_\+button@{add\+\_\+button}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{add\+\_\+button}{add\_button}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button add\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_a02effa079a870eac99d658ab96077499}\label{classWildlifeTrackingApp_1_1Category_a02effa079a870eac99d658ab96077499}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!all\+Category\+Details@{all\+Category\+Details}}
+\index{all\+Category\+Details@{all\+Category\+Details}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{all\+Category\+Details}{allCategoryDetails}}
+{\footnotesize\ttfamily List$<$\hyperlink{classWildlifeTrackingApp_1_1Models_1_1Category}{Models.\+Category}$>$ all\+Category\+Details\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_aca0b56eba54545e931661b3e3661c34b}\label{classWildlifeTrackingApp_1_1Category_aca0b56eba54545e931661b3e3661c34b}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!category\+\_\+data\+Grid\+View@{category\+\_\+data\+Grid\+View}}
+\index{category\+\_\+data\+Grid\+View@{category\+\_\+data\+Grid\+View}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{category\+\_\+data\+Grid\+View}{category\_dataGridView}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Data\+Grid\+View category\+\_\+data\+Grid\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_a205fdcaba6d0c0047179a287f02825cf}\label{classWildlifeTrackingApp_1_1Category_a205fdcaba6d0c0047179a287f02825cf}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!category\+Detail@{category\+Detail}}
+\index{category\+Detail@{category\+Detail}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{category\+Detail}{categoryDetail}}
+{\footnotesize\ttfamily Data\+Table category\+Detail\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_a02595f1c09713bb71dcb2fbbfc7ffa4b}\label{classWildlifeTrackingApp_1_1Category_a02595f1c09713bb71dcb2fbbfc7ffa4b}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!components@{components}}
+\index{components@{components}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{components}{components}}
+{\footnotesize\ttfamily System.\+Component\+Model.\+I\+Container components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required designer variable. 
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_a84dcb7863c4f709001a644ff98f22414}\label{classWildlifeTrackingApp_1_1Category_a84dcb7863c4f709001a644ff98f22414}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!delete\+\_\+button@{delete\+\_\+button}}
+\index{delete\+\_\+button@{delete\+\_\+button}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{delete\+\_\+button}{delete\_button}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button delete\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_ae6c6142b8525b2f4ac6ee6e003b3106f}\label{classWildlifeTrackingApp_1_1Category_ae6c6142b8525b2f4ac6ee6e003b3106f}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!log@{log}}
+\index{log@{log}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily readonly log4net.\+I\+Log log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= log4net.LogManager.GetLogger
+        (\hyperlink{namespaceSystem}{System}.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+\end{DoxyCode}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_aad96a74a8e07bceb571a64a3355b779d}\label{classWildlifeTrackingApp_1_1Category_aad96a74a8e07bceb571a64a3355b779d}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!selected\+Row@{selected\+Row}}
+\index{selected\+Row@{selected\+Row}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{selected\+Row}{selectedRow}}
+{\footnotesize\ttfamily int selected\+Row}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Category_a5fc9abb86e6110ecd61d0a1a7d740a8a}\label{classWildlifeTrackingApp_1_1Category_a5fc9abb86e6110ecd61d0a1a7d740a8a}} 
+\index{Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}!Log@{Log}}
+\index{Log@{Log}!Wildlife\+Tracking\+App\+::\+Category@{Wildlife\+Tracking\+App\+::\+Category}}
+\subsubsection{\texorpdfstring{Log}{Log}}
+{\footnotesize\ttfamily log4net.\+I\+Log Log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+View/\hyperlink{View_2Category_8cs}{Category.\+cs}\item 
+View/\hyperlink{Category_8Designer_8cs}{Category.\+Designer.\+cs}\end{DoxyCompactItemize}

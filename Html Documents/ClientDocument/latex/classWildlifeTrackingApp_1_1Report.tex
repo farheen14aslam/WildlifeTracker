@@ -1,0 +1,286 @@
+\hypertarget{classWildlifeTrackingApp_1_1Report}{}\section{Report}
+\label{classWildlifeTrackingApp_1_1Report}\index{Report@{Report}}
+
+
+Form class for the report generation page. Generates report of total number of animals per categories based on the from and to date.  
+
+
+Inheritance diagram for Report\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWildlifeTrackingApp_1_1Report}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildlifeTrackingApp_1_1Report_a62bc0d20ce17d1ee1289cfccd4c0ce68}{Report} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Date\+Time \hyperlink{classWildlifeTrackingApp_1_1Report_a3ee65fd5edda8ee4040edc92e50acfc5}{from\+Date} = Date\+Time.\+Now
+\item 
+Date\+Time \hyperlink{classWildlifeTrackingApp_1_1Report_a6c861174d14c06304507891ae7ee89cf}{to\+Date} = Date\+Time.\+Now
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{classWildlifeTrackingApp_1_1Report_a849c3c7f8d08104f0cdb46bee9fe6389}{Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static log4net.\+I\+Log \hyperlink{classWildlifeTrackingApp_1_1Report_a5fc9abb86e6110ecd61d0a1a7d740a8a}{Log}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classWildlifeTrackingApp_1_1Report_a0f200b495bdf3a236fb9c28c94b80c3e}{from\+Date\+Picker\+\_\+\+Value\+Changed} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for the change in the value of fromdate picker. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1Report_a7c96e63901fb6957f166378e24e989a6}{generate\+\_\+button\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for the generate button click. It generates charts based on total number of animals per category. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1Report_a6405d5db675d5338663195a4d12b4c9f}{Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1Report_a689e29ad27d8dabef272ce565669e8d9}{Report\+\_\+\+Load} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for form load. Customizes the datetime picker format. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1Report_a2a3664c6456b8f19a68866509ec3d802}{report\+Generation\+\_\+\+Activated} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for the activation of form. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1Report_a3479aaacdf8b5caeede09ea6a098e25f}{to\+Date\+Picker\+\_\+\+Value\+Changed} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for the change in the value of todate picker. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+System.\+Component\+Model.\+I\+Container \hyperlink{classWildlifeTrackingApp_1_1Report_a02595f1c09713bb71dcb2fbbfc7ffa4b}{components} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+System.\+Windows.\+Forms.\+Label \hyperlink{classWildlifeTrackingApp_1_1Report_ae086ffc402f846f057da52c2e5f5e9b5}{from\+Date\+\_\+label}
+\item 
+System.\+Windows.\+Forms.\+Date\+Time\+Picker \hyperlink{classWildlifeTrackingApp_1_1Report_abff71dccee21e2fcd7b2e912b3b7c608}{from\+Date\+Picker}
+\item 
+System.\+Windows.\+Forms.\+Button \hyperlink{classWildlifeTrackingApp_1_1Report_a44b2ab91fc54d54d9ef460e816ae272e}{generate\+\_\+button}
+\item 
+System.\+Windows.\+Forms.\+Data\+Visualization.\+Charting.\+Chart \hyperlink{classWildlifeTrackingApp_1_1Report_a9ba237d7da8d44242a02064a69dc9bcd}{report\+Chart}
+\item 
+System.\+Windows.\+Forms.\+Label \hyperlink{classWildlifeTrackingApp_1_1Report_a1534049397f4b7ab97324f502b5f5335}{to\+Date\+\_\+label}
+\item 
+System.\+Windows.\+Forms.\+Date\+Time\+Picker \hyperlink{classWildlifeTrackingApp_1_1Report_afd2fec8eb0f1c33b3b723a6d349c20ed}{to\+Date\+Picker}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly log4net.\+I\+Log \hyperlink{classWildlifeTrackingApp_1_1Report_ae6c6142b8525b2f4ac6ee6e003b3106f}{log}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Form class for the report generation page. Generates report of total number of animals per categories based on the from and to date. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a62bc0d20ce17d1ee1289cfccd4c0ce68}\label{classWildlifeTrackingApp_1_1Report_a62bc0d20ce17d1ee1289cfccd4c0ce68}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!Report@{Report}}
+\index{Report@{Report}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{Report()}{Report()}}
+{\footnotesize\ttfamily \hyperlink{classWildlifeTrackingApp_1_1Report}{Report} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a849c3c7f8d08104f0cdb46bee9fe6389}\label{classWildlifeTrackingApp_1_1Report_a849c3c7f8d08104f0cdb46bee9fe6389}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a0f200b495bdf3a236fb9c28c94b80c3e}\label{classWildlifeTrackingApp_1_1Report_a0f200b495bdf3a236fb9c28c94b80c3e}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!from\+Date\+Picker\+\_\+\+Value\+Changed@{from\+Date\+Picker\+\_\+\+Value\+Changed}}
+\index{from\+Date\+Picker\+\_\+\+Value\+Changed@{from\+Date\+Picker\+\_\+\+Value\+Changed}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{from\+Date\+Picker\+\_\+\+Value\+Changed()}{fromDatePicker\_ValueChanged()}}
+{\footnotesize\ttfamily void from\+Date\+Picker\+\_\+\+Value\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for the change in the value of fromdate picker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a7c96e63901fb6957f166378e24e989a6}\label{classWildlifeTrackingApp_1_1Report_a7c96e63901fb6957f166378e24e989a6}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!generate\+\_\+button\+\_\+\+Click@{generate\+\_\+button\+\_\+\+Click}}
+\index{generate\+\_\+button\+\_\+\+Click@{generate\+\_\+button\+\_\+\+Click}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{generate\+\_\+button\+\_\+\+Click()}{generate\_button\_Click()}}
+{\footnotesize\ttfamily void generate\+\_\+button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for the generate button click. It generates charts based on total number of animals per category. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a6405d5db675d5338663195a4d12b4c9f}\label{classWildlifeTrackingApp_1_1Report_a6405d5db675d5338663195a4d12b4c9f}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!Initialize\+Component@{Initialize\+Component}}
+\index{Initialize\+Component@{Initialize\+Component}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{Initialize\+Component()}{InitializeComponent()}}
+{\footnotesize\ttfamily void Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Required method for Designer support -\/ do not modify the contents of this method with the code editor. 
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a689e29ad27d8dabef272ce565669e8d9}\label{classWildlifeTrackingApp_1_1Report_a689e29ad27d8dabef272ce565669e8d9}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!Report\+\_\+\+Load@{Report\+\_\+\+Load}}
+\index{Report\+\_\+\+Load@{Report\+\_\+\+Load}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{Report\+\_\+\+Load()}{Report\_Load()}}
+{\footnotesize\ttfamily void Report\+\_\+\+Load (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for form load. Customizes the datetime picker format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a2a3664c6456b8f19a68866509ec3d802}\label{classWildlifeTrackingApp_1_1Report_a2a3664c6456b8f19a68866509ec3d802}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!report\+Generation\+\_\+\+Activated@{report\+Generation\+\_\+\+Activated}}
+\index{report\+Generation\+\_\+\+Activated@{report\+Generation\+\_\+\+Activated}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{report\+Generation\+\_\+\+Activated()}{reportGeneration\_Activated()}}
+{\footnotesize\ttfamily void report\+Generation\+\_\+\+Activated (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for the activation of form. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a3479aaacdf8b5caeede09ea6a098e25f}\label{classWildlifeTrackingApp_1_1Report_a3479aaacdf8b5caeede09ea6a098e25f}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!to\+Date\+Picker\+\_\+\+Value\+Changed@{to\+Date\+Picker\+\_\+\+Value\+Changed}}
+\index{to\+Date\+Picker\+\_\+\+Value\+Changed@{to\+Date\+Picker\+\_\+\+Value\+Changed}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{to\+Date\+Picker\+\_\+\+Value\+Changed()}{toDatePicker\_ValueChanged()}}
+{\footnotesize\ttfamily void to\+Date\+Picker\+\_\+\+Value\+Changed (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for the change in the value of todate picker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a02595f1c09713bb71dcb2fbbfc7ffa4b}\label{classWildlifeTrackingApp_1_1Report_a02595f1c09713bb71dcb2fbbfc7ffa4b}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!components@{components}}
+\index{components@{components}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{components}{components}}
+{\footnotesize\ttfamily System.\+Component\+Model.\+I\+Container components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required designer variable. 
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a3ee65fd5edda8ee4040edc92e50acfc5}\label{classWildlifeTrackingApp_1_1Report_a3ee65fd5edda8ee4040edc92e50acfc5}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!from\+Date@{from\+Date}}
+\index{from\+Date@{from\+Date}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{from\+Date}{fromDate}}
+{\footnotesize\ttfamily Date\+Time from\+Date = Date\+Time.\+Now}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_ae086ffc402f846f057da52c2e5f5e9b5}\label{classWildlifeTrackingApp_1_1Report_ae086ffc402f846f057da52c2e5f5e9b5}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!from\+Date\+\_\+label@{from\+Date\+\_\+label}}
+\index{from\+Date\+\_\+label@{from\+Date\+\_\+label}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{from\+Date\+\_\+label}{fromDate\_label}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label from\+Date\+\_\+label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_abff71dccee21e2fcd7b2e912b3b7c608}\label{classWildlifeTrackingApp_1_1Report_abff71dccee21e2fcd7b2e912b3b7c608}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!from\+Date\+Picker@{from\+Date\+Picker}}
+\index{from\+Date\+Picker@{from\+Date\+Picker}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{from\+Date\+Picker}{fromDatePicker}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Date\+Time\+Picker from\+Date\+Picker\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a44b2ab91fc54d54d9ef460e816ae272e}\label{classWildlifeTrackingApp_1_1Report_a44b2ab91fc54d54d9ef460e816ae272e}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!generate\+\_\+button@{generate\+\_\+button}}
+\index{generate\+\_\+button@{generate\+\_\+button}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{generate\+\_\+button}{generate\_button}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button generate\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_ae6c6142b8525b2f4ac6ee6e003b3106f}\label{classWildlifeTrackingApp_1_1Report_ae6c6142b8525b2f4ac6ee6e003b3106f}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!log@{log}}
+\index{log@{log}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily readonly log4net.\+I\+Log log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= log4net.LogManager.GetLogger
+        (\hyperlink{namespaceSystem}{System}.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+\end{DoxyCode}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a9ba237d7da8d44242a02064a69dc9bcd}\label{classWildlifeTrackingApp_1_1Report_a9ba237d7da8d44242a02064a69dc9bcd}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!report\+Chart@{report\+Chart}}
+\index{report\+Chart@{report\+Chart}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{report\+Chart}{reportChart}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Data\+Visualization.\+Charting.\+Chart report\+Chart\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a6c861174d14c06304507891ae7ee89cf}\label{classWildlifeTrackingApp_1_1Report_a6c861174d14c06304507891ae7ee89cf}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!to\+Date@{to\+Date}}
+\index{to\+Date@{to\+Date}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{to\+Date}{toDate}}
+{\footnotesize\ttfamily Date\+Time to\+Date = Date\+Time.\+Now}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a1534049397f4b7ab97324f502b5f5335}\label{classWildlifeTrackingApp_1_1Report_a1534049397f4b7ab97324f502b5f5335}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!to\+Date\+\_\+label@{to\+Date\+\_\+label}}
+\index{to\+Date\+\_\+label@{to\+Date\+\_\+label}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{to\+Date\+\_\+label}{toDate\_label}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label to\+Date\+\_\+label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_afd2fec8eb0f1c33b3b723a6d349c20ed}\label{classWildlifeTrackingApp_1_1Report_afd2fec8eb0f1c33b3b723a6d349c20ed}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!to\+Date\+Picker@{to\+Date\+Picker}}
+\index{to\+Date\+Picker@{to\+Date\+Picker}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{to\+Date\+Picker}{toDatePicker}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Date\+Time\+Picker to\+Date\+Picker\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1Report_a5fc9abb86e6110ecd61d0a1a7d740a8a}\label{classWildlifeTrackingApp_1_1Report_a5fc9abb86e6110ecd61d0a1a7d740a8a}} 
+\index{Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}!Log@{Log}}
+\index{Log@{Log}!Wildlife\+Tracking\+App\+::\+Report@{Wildlife\+Tracking\+App\+::\+Report}}
+\subsubsection{\texorpdfstring{Log}{Log}}
+{\footnotesize\ttfamily log4net.\+I\+Log Log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+View/\hyperlink{Report_8cs}{Report.\+cs}\item 
+View/\hyperlink{Report_8Designer_8cs}{Report.\+Designer.\+cs}\end{DoxyCompactItemize}

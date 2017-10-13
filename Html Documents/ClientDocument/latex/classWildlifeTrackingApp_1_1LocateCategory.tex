@@ -1,0 +1,245 @@
+\hypertarget{classWildlifeTrackingApp_1_1LocateCategory}{}\section{Locate\+Category}
+\label{classWildlifeTrackingApp_1_1LocateCategory}\index{Locate\+Category@{Locate\+Category}}
+
+
+Form class that loads map and locates the animals from given categories.  
+
+
+Inheritance diagram for Locate\+Category\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWildlifeTrackingApp_1_1LocateCategory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildlifeTrackingApp_1_1LocateCategory_abdc0fce16d0e2de3af4c81225ae3c925}{Locate\+Category} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_a849c3c7f8d08104f0cdb46bee9fe6389}{Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static log4net.\+I\+Log \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_a5fc9abb86e6110ecd61d0a1a7d740a8a}{Log}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_a99a28fbc72be710413039cec9aeeba10}{configure\+Zooming\+Of\+Map} ()
+\item 
+void \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_a7f17e416fe1ed8e8eba93a84a5aecb11}{g\+Map\+Control\+\_\+\+Load} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Loads the Gmap. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_a6405d5db675d5338663195a4d12b4c9f}{Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_a4556db306d6b4b0b473df21ef87398c5}{load\+Google\+Map\+For\+All\+Category} ()
+\begin{DoxyCompactList}\small\item\em Locates total animals from all categoreies in Gmap. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_a9b1d54086f1fa768d30c15fdc1971924}{load\+Google\+Map\+Per\+Category} ()
+\begin{DoxyCompactList}\small\item\em Locates animals from the selected category. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_ab9a46ca8e764049be2d465a144610180}{locate\+Category\+\_\+\+Activated} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for the activation of the form. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_a613e5c1a6893ab25486d97ab4e17d7e8}{locate\+Selected\+Category} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for the selection change of drop down menu. It locates the all animals from a particular categories or from all categories choosen based on drop down menu selection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+System.\+Windows.\+Forms.\+Combo\+Box \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_a8b1f399ade6c575e8562bc7d574d60d5}{category\+\_\+combo\+Box}
+\item 
+System.\+Windows.\+Forms.\+Label \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_ad2144d281f164c5692cabbdd67e60c00}{category\+Name\+\_\+label}
+\item 
+System.\+Component\+Model.\+I\+Container \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_a02595f1c09713bb71dcb2fbbfc7ffa4b}{components} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+G\+Map.\+N\+E\+T.\+Windows\+Forms.\+G\+Map\+Control \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_a33b985f58f15052a572266a4a0b43637}{g\+Map\+Control}
+\item 
+System.\+Windows.\+Forms.\+Label \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_a2fd4190abaec4ee146747d5a024d1bda}{select\+Category\+\_\+label}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly log4net.\+I\+Log \hyperlink{classWildlifeTrackingApp_1_1LocateCategory_ae6c6142b8525b2f4ac6ee6e003b3106f}{log}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Form class that loads map and locates the animals from given categories. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_abdc0fce16d0e2de3af4c81225ae3c925}\label{classWildlifeTrackingApp_1_1LocateCategory_abdc0fce16d0e2de3af4c81225ae3c925}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!Locate\+Category@{Locate\+Category}}
+\index{Locate\+Category@{Locate\+Category}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{Locate\+Category()}{LocateCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildlifeTrackingApp_1_1LocateCategory}{Locate\+Category} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_a99a28fbc72be710413039cec9aeeba10}\label{classWildlifeTrackingApp_1_1LocateCategory_a99a28fbc72be710413039cec9aeeba10}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!configure\+Zooming\+Of\+Map@{configure\+Zooming\+Of\+Map}}
+\index{configure\+Zooming\+Of\+Map@{configure\+Zooming\+Of\+Map}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{configure\+Zooming\+Of\+Map()}{configureZoomingOfMap()}}
+{\footnotesize\ttfamily void configure\+Zooming\+Of\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_a849c3c7f8d08104f0cdb46bee9fe6389}\label{classWildlifeTrackingApp_1_1LocateCategory_a849c3c7f8d08104f0cdb46bee9fe6389}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_a7f17e416fe1ed8e8eba93a84a5aecb11}\label{classWildlifeTrackingApp_1_1LocateCategory_a7f17e416fe1ed8e8eba93a84a5aecb11}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!g\+Map\+Control\+\_\+\+Load@{g\+Map\+Control\+\_\+\+Load}}
+\index{g\+Map\+Control\+\_\+\+Load@{g\+Map\+Control\+\_\+\+Load}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{g\+Map\+Control\+\_\+\+Load()}{gMapControl\_Load()}}
+{\footnotesize\ttfamily void g\+Map\+Control\+\_\+\+Load (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Loads the Gmap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_a6405d5db675d5338663195a4d12b4c9f}\label{classWildlifeTrackingApp_1_1LocateCategory_a6405d5db675d5338663195a4d12b4c9f}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!Initialize\+Component@{Initialize\+Component}}
+\index{Initialize\+Component@{Initialize\+Component}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{Initialize\+Component()}{InitializeComponent()}}
+{\footnotesize\ttfamily void Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Required method for Designer support -\/ do not modify the contents of this method with the code editor. 
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_a4556db306d6b4b0b473df21ef87398c5}\label{classWildlifeTrackingApp_1_1LocateCategory_a4556db306d6b4b0b473df21ef87398c5}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!load\+Google\+Map\+For\+All\+Category@{load\+Google\+Map\+For\+All\+Category}}
+\index{load\+Google\+Map\+For\+All\+Category@{load\+Google\+Map\+For\+All\+Category}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{load\+Google\+Map\+For\+All\+Category()}{loadGoogleMapForAllCategory()}}
+{\footnotesize\ttfamily void load\+Google\+Map\+For\+All\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Locates total animals from all categoreies in Gmap. 
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_a9b1d54086f1fa768d30c15fdc1971924}\label{classWildlifeTrackingApp_1_1LocateCategory_a9b1d54086f1fa768d30c15fdc1971924}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!load\+Google\+Map\+Per\+Category@{load\+Google\+Map\+Per\+Category}}
+\index{load\+Google\+Map\+Per\+Category@{load\+Google\+Map\+Per\+Category}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{load\+Google\+Map\+Per\+Category()}{loadGoogleMapPerCategory()}}
+{\footnotesize\ttfamily void load\+Google\+Map\+Per\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Locates animals from the selected category. 
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_ab9a46ca8e764049be2d465a144610180}\label{classWildlifeTrackingApp_1_1LocateCategory_ab9a46ca8e764049be2d465a144610180}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!locate\+Category\+\_\+\+Activated@{locate\+Category\+\_\+\+Activated}}
+\index{locate\+Category\+\_\+\+Activated@{locate\+Category\+\_\+\+Activated}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{locate\+Category\+\_\+\+Activated()}{locateCategory\_Activated()}}
+{\footnotesize\ttfamily void locate\+Category\+\_\+\+Activated (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for the activation of the form. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_a613e5c1a6893ab25486d97ab4e17d7e8}\label{classWildlifeTrackingApp_1_1LocateCategory_a613e5c1a6893ab25486d97ab4e17d7e8}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!locate\+Selected\+Category@{locate\+Selected\+Category}}
+\index{locate\+Selected\+Category@{locate\+Selected\+Category}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{locate\+Selected\+Category()}{locateSelectedCategory()}}
+{\footnotesize\ttfamily void locate\+Selected\+Category (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for the selection change of drop down menu. It locates the all animals from a particular categories or from all categories choosen based on drop down menu selection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_a8b1f399ade6c575e8562bc7d574d60d5}\label{classWildlifeTrackingApp_1_1LocateCategory_a8b1f399ade6c575e8562bc7d574d60d5}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!category\+\_\+combo\+Box@{category\+\_\+combo\+Box}}
+\index{category\+\_\+combo\+Box@{category\+\_\+combo\+Box}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{category\+\_\+combo\+Box}{category\_comboBox}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Combo\+Box category\+\_\+combo\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_ad2144d281f164c5692cabbdd67e60c00}\label{classWildlifeTrackingApp_1_1LocateCategory_ad2144d281f164c5692cabbdd67e60c00}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!category\+Name\+\_\+label@{category\+Name\+\_\+label}}
+\index{category\+Name\+\_\+label@{category\+Name\+\_\+label}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{category\+Name\+\_\+label}{categoryName\_label}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label category\+Name\+\_\+label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_a02595f1c09713bb71dcb2fbbfc7ffa4b}\label{classWildlifeTrackingApp_1_1LocateCategory_a02595f1c09713bb71dcb2fbbfc7ffa4b}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!components@{components}}
+\index{components@{components}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{components}{components}}
+{\footnotesize\ttfamily System.\+Component\+Model.\+I\+Container components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required designer variable. 
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_a33b985f58f15052a572266a4a0b43637}\label{classWildlifeTrackingApp_1_1LocateCategory_a33b985f58f15052a572266a4a0b43637}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!g\+Map\+Control@{g\+Map\+Control}}
+\index{g\+Map\+Control@{g\+Map\+Control}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{g\+Map\+Control}{gMapControl}}
+{\footnotesize\ttfamily G\+Map.\+N\+E\+T.\+Windows\+Forms.\+G\+Map\+Control g\+Map\+Control\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_ae6c6142b8525b2f4ac6ee6e003b3106f}\label{classWildlifeTrackingApp_1_1LocateCategory_ae6c6142b8525b2f4ac6ee6e003b3106f}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!log@{log}}
+\index{log@{log}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily readonly log4net.\+I\+Log log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= log4net.LogManager.GetLogger
+        (\hyperlink{namespaceSystem}{System}.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+\end{DoxyCode}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_a2fd4190abaec4ee146747d5a024d1bda}\label{classWildlifeTrackingApp_1_1LocateCategory_a2fd4190abaec4ee146747d5a024d1bda}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!select\+Category\+\_\+label@{select\+Category\+\_\+label}}
+\index{select\+Category\+\_\+label@{select\+Category\+\_\+label}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{select\+Category\+\_\+label}{selectCategory\_label}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label select\+Category\+\_\+label\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1LocateCategory_a5fc9abb86e6110ecd61d0a1a7d740a8a}\label{classWildlifeTrackingApp_1_1LocateCategory_a5fc9abb86e6110ecd61d0a1a7d740a8a}} 
+\index{Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}!Log@{Log}}
+\index{Log@{Log}!Wildlife\+Tracking\+App\+::\+Locate\+Category@{Wildlife\+Tracking\+App\+::\+Locate\+Category}}
+\subsubsection{\texorpdfstring{Log}{Log}}
+{\footnotesize\ttfamily log4net.\+I\+Log Log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+View/\hyperlink{LocateCategory_8cs}{Locate\+Category.\+cs}\item 
+View/\hyperlink{LocateCategory_8Designer_8cs}{Locate\+Category.\+Designer.\+cs}\end{DoxyCompactItemize}

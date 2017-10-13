@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildLifeTracker", "WildLifeTracker\WildLifeTracker.csproj", "{3D87E01A-2176-417A-86AE-F23FCBFD5DF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildLifeTrackerTest", "WildLifeTrackerTest\WildLifeTrackerTest.csproj", "{4FCACEE7-BD0D-43E2-8E90-E26A927C0D4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D87E01A-2176-417A-86AE-F23FCBFD5DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D87E01A-2176-417A-86AE-F23FCBFD5DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D87E01A-2176-417A-86AE-F23FCBFD5DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D87E01A-2176-417A-86AE-F23FCBFD5DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FCACEE7-BD0D-43E2-8E90-E26A927C0D4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FCACEE7-BD0D-43E2-8E90-E26A927C0D4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FCACEE7-BD0D-43E2-8E90-E26A927C0D4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FCACEE7-BD0D-43E2-8E90-E26A927C0D4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C8C10A5-C5C0-4B2E-9E0D-A7CCBA071FE3}
+	EndGlobalSection
+EndGlobal

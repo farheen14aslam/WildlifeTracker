@@ -1,0 +1,184 @@
+\hypertarget{classWildLifeTracker_1_1Repository_1_1CategoryRepo}{}\section{Category\+Repo}
+\label{classWildLifeTracker_1_1Repository_1_1CategoryRepo}\index{Category\+Repo@{Category\+Repo}}
+
+
+This class is used to add, update, delete and retrieve the category details.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ab195173edde734bea14de63331b50f2d}{Create\+New\+Category} (\hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} category\+Details)
+\begin{DoxyCompactList}\small\item\em This method is used to add a new Category to the database. \end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a3dcd00ae5abcdcd32e325a71afb7cb48}{Delete\+Category} (string category\+Id)
+\begin{DoxyCompactList}\small\item\em This method is used to delete the category detail for the specified category\+Id. \end{DoxyCompactList}\item 
+List$<$ \hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} $>$ \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a486d29077bf5fc9b502cbabe2977e631}{Retrieve\+All\+Categories} ()
+\begin{DoxyCompactList}\small\item\em This method is used to retrieve all the categories from the database. \end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ac779b62775c23530db1e9e7a497e006b}{Retrieve\+Category} (string category\+Id)
+\begin{DoxyCompactList}\small\item\em This method is used to retrieve the category detail for the specified category\+Id. \end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a1dfdbf9282dc67bc63171f404d89291c}{Update\+Category} (string category\+Id, \hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} category\+Details)
+\begin{DoxyCompactList}\small\item\em This method is used to update the category detail for the specified category\+Id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo}{Category\+Repo} \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a830fdfa06499b071009c5b454e08c114}{get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ad9e76050687bbd1c1e68368d424475ef}{Category\+Repo} ()
+\begin{DoxyCompactList}\small\item\em Constructor that intialize log4net in class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo}{Category\+Repo} \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ac921edd1d88c6a3406c9838ccd0f76ee}{instance} = null
+\item 
+static object \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a38ff5bc3c19841e1e23deb0481c9816c}{lock\+Obj} = new Object()
+\item 
+static readonly log4net.\+I\+Log \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ae6c6142b8525b2f4ac6ee6e003b3106f}{log}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to add, update, delete and retrieve the category details. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ad9e76050687bbd1c1e68368d424475ef}\label{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ad9e76050687bbd1c1e68368d424475ef}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}!Category\+Repo@{Category\+Repo}}
+\index{Category\+Repo@{Category\+Repo}!Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}}
+\subsubsection{\texorpdfstring{Category\+Repo()}{CategoryRepo()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo}{Category\+Repo} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Constructor that intialize log4net in class 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ab195173edde734bea14de63331b50f2d}\label{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ab195173edde734bea14de63331b50f2d}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}!Create\+New\+Category@{Create\+New\+Category}}
+\index{Create\+New\+Category@{Create\+New\+Category}!Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}}
+\subsubsection{\texorpdfstring{Create\+New\+Category()}{CreateNewCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} Create\+New\+Category (\begin{DoxyParamCaption}\item[{\hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category}}]{category\+Details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is used to add a new Category to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+Details} & The category details to be saved to the DB\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The success message along with the category details added to the DB
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a3dcd00ae5abcdcd32e325a71afb7cb48}\label{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a3dcd00ae5abcdcd32e325a71afb7cb48}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}!Delete\+Category@{Delete\+Category}}
+\index{Delete\+Category@{Delete\+Category}!Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}}
+\subsubsection{\texorpdfstring{Delete\+Category()}{DeleteCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} Delete\+Category (\begin{DoxyParamCaption}\item[{string}]{category\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is used to delete the category detail for the specified category\+Id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & The category id for which the details need to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The category details for the specified category Id
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a830fdfa06499b071009c5b454e08c114}\label{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a830fdfa06499b071009c5b454e08c114}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo}{Category\+Repo} get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a486d29077bf5fc9b502cbabe2977e631}\label{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a486d29077bf5fc9b502cbabe2977e631}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}!Retrieve\+All\+Categories@{Retrieve\+All\+Categories}}
+\index{Retrieve\+All\+Categories@{Retrieve\+All\+Categories}!Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}}
+\subsubsection{\texorpdfstring{Retrieve\+All\+Categories()}{RetrieveAllCategories()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category}$>$ Retrieve\+All\+Categories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is used to retrieve all the categories from the database. 
+
+\begin{DoxyReturn}{Returns}
+The list of categories fetched from the DB
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ac779b62775c23530db1e9e7a497e006b}\label{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ac779b62775c23530db1e9e7a497e006b}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}!Retrieve\+Category@{Retrieve\+Category}}
+\index{Retrieve\+Category@{Retrieve\+Category}!Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}}
+\subsubsection{\texorpdfstring{Retrieve\+Category()}{RetrieveCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} Retrieve\+Category (\begin{DoxyParamCaption}\item[{string}]{category\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is used to retrieve the category detail for the specified category\+Id. 
+
+/// 
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & The category id for which the details need to be fetched\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The category details for the specified category Id
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a1dfdbf9282dc67bc63171f404d89291c}\label{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a1dfdbf9282dc67bc63171f404d89291c}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}!Update\+Category@{Update\+Category}}
+\index{Update\+Category@{Update\+Category}!Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}}
+\subsubsection{\texorpdfstring{Update\+Category()}{UpdateCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} Update\+Category (\begin{DoxyParamCaption}\item[{string}]{category\+Id,  }\item[{\hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category}}]{category\+Details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This method is used to update the category detail for the specified category\+Id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & The category id for which the details need to be fetched\\
+\hline
+{\em category\+Details} & The category details that need to be updated\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated category details
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ac921edd1d88c6a3406c9838ccd0f76ee}\label{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ac921edd1d88c6a3406c9838ccd0f76ee}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}!instance@{instance}}
+\index{instance@{instance}!Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Repository_1_1CategoryRepo}{Category\+Repo} instance = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a38ff5bc3c19841e1e23deb0481c9816c}\label{classWildLifeTracker_1_1Repository_1_1CategoryRepo_a38ff5bc3c19841e1e23deb0481c9816c}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}!lock\+Obj@{lock\+Obj}}
+\index{lock\+Obj@{lock\+Obj}!Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}}
+\subsubsection{\texorpdfstring{lock\+Obj}{lockObj}}
+{\footnotesize\ttfamily object lock\+Obj = new Object()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ae6c6142b8525b2f4ac6ee6e003b3106f}\label{classWildLifeTracker_1_1Repository_1_1CategoryRepo_ae6c6142b8525b2f4ac6ee6e003b3106f}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}!log@{log}}
+\index{log@{log}!Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Category\+Repo}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily readonly log4net.\+I\+Log log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= log4net.LogManager.GetLogger
+       (\hyperlink{namespaceSystem}{System}.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wild\+Life\+Tracker/\+Repository/\hyperlink{CategoryRepo_8cs}{Category\+Repo.\+cs}\end{DoxyCompactItemize}

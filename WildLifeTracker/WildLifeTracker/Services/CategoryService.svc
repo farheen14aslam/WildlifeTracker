@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WildLifeTracker.CategoryService" CodeBehind="CategoryService.svc.cs" %>

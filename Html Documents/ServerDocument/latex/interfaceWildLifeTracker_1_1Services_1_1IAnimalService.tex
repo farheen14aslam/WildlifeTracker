@@ -1,0 +1,215 @@
+\hypertarget{interfaceWildLifeTracker_1_1Services_1_1IAnimalService}{}\section{I\+Animal\+Service}
+\label{interfaceWildLifeTracker_1_1Services_1_1IAnimalService}\index{I\+Animal\+Service@{I\+Animal\+Service}}
+
+
+The interface exposes all the A\+P\+Is for animal details  
+
+
+Inheritance diagram for I\+Animal\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceWildLifeTracker_1_1Services_1_1IAnimalService}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1AnimalResponse}{Animal\+Response} \hyperlink{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_ae578d708ed9407d8805d69b193eff67b}{Add\+Animal} (\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal} animal\+Details)
+\begin{DoxyCompactList}\small\item\em Adds a new animal. 
+\begin{DoxyParams}{Parameters}
+{\em animal\+Details} & The animal details to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the animal details for the newly created animal or throws Exception
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1AnimalResponse}{Animal\+Response} \hyperlink{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_a201e384747e50bd19c431955eae072fa}{Delete\+Animal} (string animal\+Id)
+\begin{DoxyCompactList}\small\item\em Delete the animal details. 
+\begin{DoxyParams}{Parameters}
+{\em animal\+Id} & the animal id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the animal details of animal that is deleted
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1AnimalResponse}{Animal\+Response} \hyperlink{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_a38b8ef318dc92ac93cfcbbc33a454c5a}{Get\+All\+Animals} ()
+\begin{DoxyCompactList}\small\item\em Retrieves all the animals \begin{DoxyReturn}{Returns}
+Returns all the animal details
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1AnimalResponse}{Animal\+Response} \hyperlink{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_aa4dc53f849ee7b88879fa17f9d48bd42}{Get\+Animals\+Count\+Per\+Category} (string from\+Date, string to\+Date)
+\begin{DoxyCompactList}\small\item\em Update an animal details. 
+\begin{DoxyParams}{Parameters}
+{\em from\+Date} & from date\\
+\hline
+{\em to\+Date} & to date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the count of animal per category
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1AnimalResponse}{Animal\+Response} \hyperlink{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_aa701643cef16849a06696c926b87d46d}{Get\+Animals\+Percategory} (string category\+Id)
+\begin{DoxyCompactList}\small\item\em Retrieves all the animal when category\+Id is specified. 
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & the category id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns animal per category
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1AnimalResponse}{Animal\+Response} \hyperlink{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_a993d3155da89897e5403799432be158b}{Update\+Animal} (\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal} animal\+Details)
+\begin{DoxyCompactList}\small\item\em Update an animal details. 
+\begin{DoxyParams}{Parameters}
+{\em animal\+Details} & the animal details\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the animal details of updated animal
+\end{DoxyReturn}
+\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The interface exposes all the A\+P\+Is for animal details 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_ae578d708ed9407d8805d69b193eff67b}\label{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_ae578d708ed9407d8805d69b193eff67b}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service}!Add\+Animal@{Add\+Animal}}
+\index{Add\+Animal@{Add\+Animal}!Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service}}
+\subsubsection{\texorpdfstring{Add\+Animal()}{AddAnimal()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1AnimalResponse}{Animal\+Response} Add\+Animal (\begin{DoxyParamCaption}\item[{\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal}}]{animal\+Details }\end{DoxyParamCaption})}
+
+
+
+Adds a new animal. 
+\begin{DoxyParams}{Parameters}
+{\em animal\+Details} & The animal details to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the animal details for the newly created animal or throws Exception
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1Services_1_1AnimalService_ae578d708ed9407d8805d69b193eff67b}{Animal\+Service}.
+
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_a201e384747e50bd19c431955eae072fa}\label{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_a201e384747e50bd19c431955eae072fa}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service}!Delete\+Animal@{Delete\+Animal}}
+\index{Delete\+Animal@{Delete\+Animal}!Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service}}
+\subsubsection{\texorpdfstring{Delete\+Animal()}{DeleteAnimal()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1AnimalResponse}{Animal\+Response} Delete\+Animal (\begin{DoxyParamCaption}\item[{string}]{animal\+Id }\end{DoxyParamCaption})}
+
+
+
+Delete the animal details. 
+\begin{DoxyParams}{Parameters}
+{\em animal\+Id} & the animal id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the animal details of animal that is deleted
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1Services_1_1AnimalService_a201e384747e50bd19c431955eae072fa}{Animal\+Service}.
+
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_a38b8ef318dc92ac93cfcbbc33a454c5a}\label{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_a38b8ef318dc92ac93cfcbbc33a454c5a}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service}!Get\+All\+Animals@{Get\+All\+Animals}}
+\index{Get\+All\+Animals@{Get\+All\+Animals}!Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service}}
+\subsubsection{\texorpdfstring{Get\+All\+Animals()}{GetAllAnimals()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1AnimalResponse}{Animal\+Response} Get\+All\+Animals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves all the animals \begin{DoxyReturn}{Returns}
+Returns all the animal details
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1Services_1_1AnimalService_a38b8ef318dc92ac93cfcbbc33a454c5a}{Animal\+Service}.
+
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_aa4dc53f849ee7b88879fa17f9d48bd42}\label{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_aa4dc53f849ee7b88879fa17f9d48bd42}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service}!Get\+Animals\+Count\+Per\+Category@{Get\+Animals\+Count\+Per\+Category}}
+\index{Get\+Animals\+Count\+Per\+Category@{Get\+Animals\+Count\+Per\+Category}!Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service}}
+\subsubsection{\texorpdfstring{Get\+Animals\+Count\+Per\+Category()}{GetAnimalsCountPerCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1AnimalResponse}{Animal\+Response} Get\+Animals\+Count\+Per\+Category (\begin{DoxyParamCaption}\item[{string}]{from\+Date,  }\item[{string}]{to\+Date }\end{DoxyParamCaption})}
+
+
+
+Update an animal details. 
+\begin{DoxyParams}{Parameters}
+{\em from\+Date} & from date\\
+\hline
+{\em to\+Date} & to date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the count of animal per category
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1Services_1_1AnimalService_aa4dc53f849ee7b88879fa17f9d48bd42}{Animal\+Service}.
+
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_aa701643cef16849a06696c926b87d46d}\label{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_aa701643cef16849a06696c926b87d46d}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service}!Get\+Animals\+Percategory@{Get\+Animals\+Percategory}}
+\index{Get\+Animals\+Percategory@{Get\+Animals\+Percategory}!Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service}}
+\subsubsection{\texorpdfstring{Get\+Animals\+Percategory()}{GetAnimalsPercategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1AnimalResponse}{Animal\+Response} Get\+Animals\+Percategory (\begin{DoxyParamCaption}\item[{string}]{category\+Id }\end{DoxyParamCaption})}
+
+
+
+Retrieves all the animal when category\+Id is specified. 
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & the category id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns animal per category
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1Services_1_1AnimalService_a4b971311981c685104e1b3403c87372a}{Animal\+Service}.
+
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_a993d3155da89897e5403799432be158b}\label{interfaceWildLifeTracker_1_1Services_1_1IAnimalService_a993d3155da89897e5403799432be158b}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service}!Update\+Animal@{Update\+Animal}}
+\index{Update\+Animal@{Update\+Animal}!Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Animal\+Service}}
+\subsubsection{\texorpdfstring{Update\+Animal()}{UpdateAnimal()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1AnimalResponse}{Animal\+Response} Update\+Animal (\begin{DoxyParamCaption}\item[{\hyperlink{classWildLifeTracker_1_1Models_1_1Animal}{Animal}}]{animal\+Details }\end{DoxyParamCaption})}
+
+
+
+Update an animal details. 
+\begin{DoxyParams}{Parameters}
+{\em animal\+Details} & the animal details\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the animal details of updated animal
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1Services_1_1AnimalService_a993d3155da89897e5403799432be158b}{Animal\+Service}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wild\+Life\+Tracker/\+Services/\hyperlink{IAnimalService_8cs}{I\+Animal\+Service.\+cs}\end{DoxyCompactItemize}

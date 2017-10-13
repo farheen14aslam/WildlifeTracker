@@ -1,0 +1,156 @@
+\hypertarget{classWildLifeTracker_1_1Repository_1_1TrackingRepo}{}\section{Tracking\+Repo}
+\label{classWildLifeTracker_1_1Repository_1_1TrackingRepo}\index{Tracking\+Repo@{Tracking\+Repo}}
+
+
+The class is used to store the G\+PS Location and retrieve the latest position of animals  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info} \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo_a6eb233393913005b573dd88cf166b95a}{Add\+New\+Tracking\+Details} (\hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info} gps\+Location\+Info)
+\begin{DoxyCompactList}\small\item\em Add a new tracking information(\+Location of animals when animal moves) \end{DoxyCompactList}\item 
+List$<$ \hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info} $>$ \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo_a39ffe359b825a23eb35d132e4a4989e0}{Retrieve\+All\+Animals\+Latest\+Location} ()
+\begin{DoxyCompactList}\small\item\em Retrieves all the animal\textquotesingle{}s latest position for all the categories \end{DoxyCompactList}\item 
+List$<$ \hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info} $>$ \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo_ac084ee298dc17161640dbdd4e11de5c5}{Retrieve\+All\+Animals\+Latest\+Location\+Per\+Category} (string category\+Id)
+\begin{DoxyCompactList}\small\item\em Retrieves all the animal\textquotesingle{}s latest position per category \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo}{Tracking\+Repo} \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo_abafc75f4ead187ecad6033c4386250d2}{get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static log4net.\+I\+Log \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo_a5fc9abb86e6110ecd61d0a1a7d740a8a}{Log}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo_aabb3d9d19f75b36a5119cfb7275728c5}{Tracking\+Repo} ()
+\begin{DoxyCompactList}\small\item\em Constructor that intialize log4net in class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo}{Tracking\+Repo} \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo_ac0e711a270f857caad3532294a5bee6f}{instance} = null
+\item 
+static object \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo_a38ff5bc3c19841e1e23deb0481c9816c}{lock\+Obj} = new Object()
+\item 
+static readonly log4net.\+I\+Log \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo_ae6c6142b8525b2f4ac6ee6e003b3106f}{log}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class is used to store the G\+PS Location and retrieve the latest position of animals 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1TrackingRepo_aabb3d9d19f75b36a5119cfb7275728c5}\label{classWildLifeTracker_1_1Repository_1_1TrackingRepo_aabb3d9d19f75b36a5119cfb7275728c5}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}!Tracking\+Repo@{Tracking\+Repo}}
+\index{Tracking\+Repo@{Tracking\+Repo}!Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}}
+\subsubsection{\texorpdfstring{Tracking\+Repo()}{TrackingRepo()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo}{Tracking\+Repo} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Constructor that intialize log4net in class 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1TrackingRepo_a6eb233393913005b573dd88cf166b95a}\label{classWildLifeTracker_1_1Repository_1_1TrackingRepo_a6eb233393913005b573dd88cf166b95a}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}!Add\+New\+Tracking\+Details@{Add\+New\+Tracking\+Details}}
+\index{Add\+New\+Tracking\+Details@{Add\+New\+Tracking\+Details}!Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}}
+\subsubsection{\texorpdfstring{Add\+New\+Tracking\+Details()}{AddNewTrackingDetails()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info} Add\+New\+Tracking\+Details (\begin{DoxyParamCaption}\item[{\hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info}}]{gps\+Location\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add a new tracking information(\+Location of animals when animal moves) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gps\+Location\+Info} & The G\+PS location info\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The details of gps tracking info
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1TrackingRepo_abafc75f4ead187ecad6033c4386250d2}\label{classWildLifeTracker_1_1Repository_1_1TrackingRepo_abafc75f4ead187ecad6033c4386250d2}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily static \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo}{Tracking\+Repo} get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1TrackingRepo_a39ffe359b825a23eb35d132e4a4989e0}\label{classWildLifeTracker_1_1Repository_1_1TrackingRepo_a39ffe359b825a23eb35d132e4a4989e0}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}!Retrieve\+All\+Animals\+Latest\+Location@{Retrieve\+All\+Animals\+Latest\+Location}}
+\index{Retrieve\+All\+Animals\+Latest\+Location@{Retrieve\+All\+Animals\+Latest\+Location}!Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}}
+\subsubsection{\texorpdfstring{Retrieve\+All\+Animals\+Latest\+Location()}{RetrieveAllAnimalsLatestLocation()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info}$>$ Retrieve\+All\+Animals\+Latest\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves all the animal\textquotesingle{}s latest position for all the categories 
+
+\begin{DoxyReturn}{Returns}
+List of Tracking info
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1TrackingRepo_ac084ee298dc17161640dbdd4e11de5c5}\label{classWildLifeTracker_1_1Repository_1_1TrackingRepo_ac084ee298dc17161640dbdd4e11de5c5}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}!Retrieve\+All\+Animals\+Latest\+Location\+Per\+Category@{Retrieve\+All\+Animals\+Latest\+Location\+Per\+Category}}
+\index{Retrieve\+All\+Animals\+Latest\+Location\+Per\+Category@{Retrieve\+All\+Animals\+Latest\+Location\+Per\+Category}!Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}}
+\subsubsection{\texorpdfstring{Retrieve\+All\+Animals\+Latest\+Location\+Per\+Category()}{RetrieveAllAnimalsLatestLocationPerCategory()}}
+{\footnotesize\ttfamily List$<$\hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info}$>$ Retrieve\+All\+Animals\+Latest\+Location\+Per\+Category (\begin{DoxyParamCaption}\item[{string}]{category\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves all the animal\textquotesingle{}s latest position per category 
+
+/// 
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & The category id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of Tracking info
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1TrackingRepo_ac0e711a270f857caad3532294a5bee6f}\label{classWildLifeTracker_1_1Repository_1_1TrackingRepo_ac0e711a270f857caad3532294a5bee6f}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}!instance@{instance}}
+\index{instance@{instance}!Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo}{Tracking\+Repo} instance = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1TrackingRepo_a38ff5bc3c19841e1e23deb0481c9816c}\label{classWildLifeTracker_1_1Repository_1_1TrackingRepo_a38ff5bc3c19841e1e23deb0481c9816c}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}!lock\+Obj@{lock\+Obj}}
+\index{lock\+Obj@{lock\+Obj}!Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}}
+\subsubsection{\texorpdfstring{lock\+Obj}{lockObj}}
+{\footnotesize\ttfamily object lock\+Obj = new Object()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1TrackingRepo_ae6c6142b8525b2f4ac6ee6e003b3106f}\label{classWildLifeTracker_1_1Repository_1_1TrackingRepo_ae6c6142b8525b2f4ac6ee6e003b3106f}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}!log@{log}}
+\index{log@{log}!Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily readonly log4net.\+I\+Log log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= log4net.LogManager.GetLogger
+       (\hyperlink{namespaceSystem}{System}.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+\end{DoxyCode}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Repository_1_1TrackingRepo_a5fc9abb86e6110ecd61d0a1a7d740a8a}\label{classWildLifeTracker_1_1Repository_1_1TrackingRepo_a5fc9abb86e6110ecd61d0a1a7d740a8a}} 
+\index{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}!Log@{Log}}
+\index{Log@{Log}!Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo@{Wild\+Life\+Tracker\+::\+Repository\+::\+Tracking\+Repo}}
+\subsubsection{\texorpdfstring{Log}{Log}}
+{\footnotesize\ttfamily log4net.\+I\+Log Log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wild\+Life\+Tracker/\+Repository/\hyperlink{TrackingRepo_8cs}{Tracking\+Repo.\+cs}\end{DoxyCompactItemize}

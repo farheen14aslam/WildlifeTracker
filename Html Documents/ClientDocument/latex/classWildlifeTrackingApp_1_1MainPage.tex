@@ -1,0 +1,332 @@
+\hypertarget{classWildlifeTrackingApp_1_1MainPage}{}\section{Main\+Page}
+\label{classWildlifeTrackingApp_1_1MainPage}\index{Main\+Page@{Main\+Page}}
+
+
+Parent Form class which loades the main page of the application.  
+
+
+Inheritance diagram for Main\+Page\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWildlifeTrackingApp_1_1MainPage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildlifeTrackingApp_1_1MainPage_a6fbc6092ff7046d51931408a67b5e855}{Main\+Page} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{classWildlifeTrackingApp_1_1MainPage_a849c3c7f8d08104f0cdb46bee9fe6389}{Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static log4net.\+I\+Log \hyperlink{classWildlifeTrackingApp_1_1MainPage_a5fc9abb86e6110ecd61d0a1a7d740a8a}{Log}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classWildlifeTrackingApp_1_1MainPage_a66141b70a6e8d761ca0e50ccb9bb5346}{category\+\_\+\+\_\+label\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for the category selection click. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1MainPage_a219fa14b69b49c53c056f1246586ee7c}{Change\+Button\+Color} (Label label)
+\begin{DoxyCompactList}\small\item\em Changes the color of label based on selection. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1MainPage_ab39f92c5661e132484e3ec3c2be6dbc6}{gps\+Device\+\_\+\+Label\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for the G\+Ps device selection click. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1MainPage_ad3ed7ab0447838e464c2afe0b67e916a}{G\+P\+S\+Device\+\_\+toolstrip\+\_\+\+Item\+Clicked} (object sender, Tool\+Strip\+Item\+Clicked\+Event\+Args e)
+\item 
+void \hyperlink{classWildlifeTrackingApp_1_1MainPage_a6405d5db675d5338663195a4d12b4c9f}{Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1MainPage_a9f26712bc47d237729adb6b4e9a78356}{locate\+\_\+label\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for the locate category selection click. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1MainPage_ab8756fc3263bdfbe17a118374ab779bc}{main\+Page\+Back\+Ground\+\_\+\+Resize} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for the resizing of the form page. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1MainPage_aca7c119833ad4525022a07c4b036e800}{report\+\_\+label\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for the report selection click. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+System.\+Windows.\+Forms.\+Label \hyperlink{classWildlifeTrackingApp_1_1MainPage_ab62919eb07aea9df0b876b7bdf801745}{category\+\_\+\+\_\+label}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip \hyperlink{classWildlifeTrackingApp_1_1MainPage_abf545879da1afeb721121957c32b7ae1}{category\+\_\+tool\+Strip}
+\item 
+System.\+Component\+Model.\+I\+Container \hyperlink{classWildlifeTrackingApp_1_1MainPage_a02595f1c09713bb71dcb2fbbfc7ffa4b}{components} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+System.\+Windows.\+Forms.\+Label \hyperlink{classWildlifeTrackingApp_1_1MainPage_ab88680d024b50e48fcf07ba1c7fd1ade}{gps\+Device\+\_\+\+Label}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip \hyperlink{classWildlifeTrackingApp_1_1MainPage_a20432d42ae05e87e11466d593461de02}{G\+P\+S\+Device\+\_\+toolstrip}
+\item 
+System.\+Windows.\+Forms.\+Label \hyperlink{classWildlifeTrackingApp_1_1MainPage_af84eec8207ceaa0e14076b855415dcea}{locate\+\_\+label}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip \hyperlink{classWildlifeTrackingApp_1_1MainPage_aef30fcc86c717364f65f5a49927f1227}{locate\+\_\+tool\+Strip}
+\item 
+System.\+Windows.\+Forms.\+Panel \hyperlink{classWildlifeTrackingApp_1_1MainPage_a094665b3f6c785c28d99b6261dc95eb0}{main\+Panel}
+\item 
+System.\+Windows.\+Forms.\+Label \hyperlink{classWildlifeTrackingApp_1_1MainPage_af6ba70393d92ce2a983bf47ab956b019}{name\+\_\+label}
+\item 
+System.\+Windows.\+Forms.\+Label \hyperlink{classWildlifeTrackingApp_1_1MainPage_a6c60ee802abc7c2be3dda738a63abc86}{report\+\_\+label}
+\item 
+System.\+Windows.\+Forms.\+Tool\+Strip \hyperlink{classWildlifeTrackingApp_1_1MainPage_a910f81e378fc8c66e03a986cfa7c5b4d}{report\+\_\+tool\+Strip}
+\item 
+System.\+Windows.\+Forms.\+Panel \hyperlink{classWildlifeTrackingApp_1_1MainPage_ad9987c4b3ca7748f440a16a357ce86e5}{title\+\_\+\+Panel}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly log4net.\+I\+Log \hyperlink{classWildlifeTrackingApp_1_1MainPage_ae6c6142b8525b2f4ac6ee6e003b3106f}{log}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parent Form class which loades the main page of the application. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_a6fbc6092ff7046d51931408a67b5e855}\label{classWildlifeTrackingApp_1_1MainPage_a6fbc6092ff7046d51931408a67b5e855}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!Main\+Page@{Main\+Page}}
+\index{Main\+Page@{Main\+Page}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{Main\+Page()}{MainPage()}}
+{\footnotesize\ttfamily \hyperlink{classWildlifeTrackingApp_1_1MainPage}{Main\+Page} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_a66141b70a6e8d761ca0e50ccb9bb5346}\label{classWildlifeTrackingApp_1_1MainPage_a66141b70a6e8d761ca0e50ccb9bb5346}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!category\+\_\+\+\_\+label\+\_\+\+Click@{category\+\_\+\+\_\+label\+\_\+\+Click}}
+\index{category\+\_\+\+\_\+label\+\_\+\+Click@{category\+\_\+\+\_\+label\+\_\+\+Click}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{category\+\_\+\+\_\+label\+\_\+\+Click()}{category\_\_label\_Click()}}
+{\footnotesize\ttfamily void category\+\_\+\+\_\+label\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for the category selection click. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_a219fa14b69b49c53c056f1246586ee7c}\label{classWildlifeTrackingApp_1_1MainPage_a219fa14b69b49c53c056f1246586ee7c}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!Change\+Button\+Color@{Change\+Button\+Color}}
+\index{Change\+Button\+Color@{Change\+Button\+Color}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{Change\+Button\+Color()}{ChangeButtonColor()}}
+{\footnotesize\ttfamily void Change\+Button\+Color (\begin{DoxyParamCaption}\item[{Label}]{label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Changes the color of label based on selection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & Instance of selected label\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_a849c3c7f8d08104f0cdb46bee9fe6389}\label{classWildlifeTrackingApp_1_1MainPage_a849c3c7f8d08104f0cdb46bee9fe6389}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_ab39f92c5661e132484e3ec3c2be6dbc6}\label{classWildlifeTrackingApp_1_1MainPage_ab39f92c5661e132484e3ec3c2be6dbc6}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!gps\+Device\+\_\+\+Label\+\_\+\+Click@{gps\+Device\+\_\+\+Label\+\_\+\+Click}}
+\index{gps\+Device\+\_\+\+Label\+\_\+\+Click@{gps\+Device\+\_\+\+Label\+\_\+\+Click}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{gps\+Device\+\_\+\+Label\+\_\+\+Click()}{gpsDevice\_Label\_Click()}}
+{\footnotesize\ttfamily void gps\+Device\+\_\+\+Label\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for the G\+Ps device selection click. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_ad3ed7ab0447838e464c2afe0b67e916a}\label{classWildlifeTrackingApp_1_1MainPage_ad3ed7ab0447838e464c2afe0b67e916a}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!G\+P\+S\+Device\+\_\+toolstrip\+\_\+\+Item\+Clicked@{G\+P\+S\+Device\+\_\+toolstrip\+\_\+\+Item\+Clicked}}
+\index{G\+P\+S\+Device\+\_\+toolstrip\+\_\+\+Item\+Clicked@{G\+P\+S\+Device\+\_\+toolstrip\+\_\+\+Item\+Clicked}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{G\+P\+S\+Device\+\_\+toolstrip\+\_\+\+Item\+Clicked()}{GPSDevice\_toolstrip\_ItemClicked()}}
+{\footnotesize\ttfamily void G\+P\+S\+Device\+\_\+toolstrip\+\_\+\+Item\+Clicked (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Tool\+Strip\+Item\+Clicked\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_a6405d5db675d5338663195a4d12b4c9f}\label{classWildlifeTrackingApp_1_1MainPage_a6405d5db675d5338663195a4d12b4c9f}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!Initialize\+Component@{Initialize\+Component}}
+\index{Initialize\+Component@{Initialize\+Component}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{Initialize\+Component()}{InitializeComponent()}}
+{\footnotesize\ttfamily void Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Required method for Designer support -\/ do not modify the contents of this method with the code editor. 
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_a9f26712bc47d237729adb6b4e9a78356}\label{classWildlifeTrackingApp_1_1MainPage_a9f26712bc47d237729adb6b4e9a78356}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!locate\+\_\+label\+\_\+\+Click@{locate\+\_\+label\+\_\+\+Click}}
+\index{locate\+\_\+label\+\_\+\+Click@{locate\+\_\+label\+\_\+\+Click}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{locate\+\_\+label\+\_\+\+Click()}{locate\_label\_Click()}}
+{\footnotesize\ttfamily void locate\+\_\+label\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for the locate category selection click. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_ab8756fc3263bdfbe17a118374ab779bc}\label{classWildlifeTrackingApp_1_1MainPage_ab8756fc3263bdfbe17a118374ab779bc}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!main\+Page\+Back\+Ground\+\_\+\+Resize@{main\+Page\+Back\+Ground\+\_\+\+Resize}}
+\index{main\+Page\+Back\+Ground\+\_\+\+Resize@{main\+Page\+Back\+Ground\+\_\+\+Resize}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{main\+Page\+Back\+Ground\+\_\+\+Resize()}{mainPageBackGround\_Resize()}}
+{\footnotesize\ttfamily void main\+Page\+Back\+Ground\+\_\+\+Resize (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for the resizing of the form page. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_aca7c119833ad4525022a07c4b036e800}\label{classWildlifeTrackingApp_1_1MainPage_aca7c119833ad4525022a07c4b036e800}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!report\+\_\+label\+\_\+\+Click@{report\+\_\+label\+\_\+\+Click}}
+\index{report\+\_\+label\+\_\+\+Click@{report\+\_\+label\+\_\+\+Click}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{report\+\_\+label\+\_\+\+Click()}{report\_label\_Click()}}
+{\footnotesize\ttfamily void report\+\_\+label\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for the report selection click. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_ab62919eb07aea9df0b876b7bdf801745}\label{classWildlifeTrackingApp_1_1MainPage_ab62919eb07aea9df0b876b7bdf801745}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!category\+\_\+\+\_\+label@{category\+\_\+\+\_\+label}}
+\index{category\+\_\+\+\_\+label@{category\+\_\+\+\_\+label}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{category\+\_\+\+\_\+label}{category\_\_label}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label category\+\_\+\+\_\+label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_abf545879da1afeb721121957c32b7ae1}\label{classWildlifeTrackingApp_1_1MainPage_abf545879da1afeb721121957c32b7ae1}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!category\+\_\+tool\+Strip@{category\+\_\+tool\+Strip}}
+\index{category\+\_\+tool\+Strip@{category\+\_\+tool\+Strip}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{category\+\_\+tool\+Strip}{category\_toolStrip}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip category\+\_\+tool\+Strip\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_a02595f1c09713bb71dcb2fbbfc7ffa4b}\label{classWildlifeTrackingApp_1_1MainPage_a02595f1c09713bb71dcb2fbbfc7ffa4b}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!components@{components}}
+\index{components@{components}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{components}{components}}
+{\footnotesize\ttfamily System.\+Component\+Model.\+I\+Container components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required designer variable. 
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_ab88680d024b50e48fcf07ba1c7fd1ade}\label{classWildlifeTrackingApp_1_1MainPage_ab88680d024b50e48fcf07ba1c7fd1ade}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!gps\+Device\+\_\+\+Label@{gps\+Device\+\_\+\+Label}}
+\index{gps\+Device\+\_\+\+Label@{gps\+Device\+\_\+\+Label}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{gps\+Device\+\_\+\+Label}{gpsDevice\_Label}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label gps\+Device\+\_\+\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_a20432d42ae05e87e11466d593461de02}\label{classWildlifeTrackingApp_1_1MainPage_a20432d42ae05e87e11466d593461de02}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!G\+P\+S\+Device\+\_\+toolstrip@{G\+P\+S\+Device\+\_\+toolstrip}}
+\index{G\+P\+S\+Device\+\_\+toolstrip@{G\+P\+S\+Device\+\_\+toolstrip}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{G\+P\+S\+Device\+\_\+toolstrip}{GPSDevice\_toolstrip}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip G\+P\+S\+Device\+\_\+toolstrip\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_af84eec8207ceaa0e14076b855415dcea}\label{classWildlifeTrackingApp_1_1MainPage_af84eec8207ceaa0e14076b855415dcea}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!locate\+\_\+label@{locate\+\_\+label}}
+\index{locate\+\_\+label@{locate\+\_\+label}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{locate\+\_\+label}{locate\_label}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label locate\+\_\+label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_aef30fcc86c717364f65f5a49927f1227}\label{classWildlifeTrackingApp_1_1MainPage_aef30fcc86c717364f65f5a49927f1227}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!locate\+\_\+tool\+Strip@{locate\+\_\+tool\+Strip}}
+\index{locate\+\_\+tool\+Strip@{locate\+\_\+tool\+Strip}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{locate\+\_\+tool\+Strip}{locate\_toolStrip}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip locate\+\_\+tool\+Strip\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_ae6c6142b8525b2f4ac6ee6e003b3106f}\label{classWildlifeTrackingApp_1_1MainPage_ae6c6142b8525b2f4ac6ee6e003b3106f}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!log@{log}}
+\index{log@{log}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily readonly log4net.\+I\+Log log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= log4net.LogManager.GetLogger
+        (\hyperlink{namespaceSystem}{System}.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+\end{DoxyCode}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_a094665b3f6c785c28d99b6261dc95eb0}\label{classWildlifeTrackingApp_1_1MainPage_a094665b3f6c785c28d99b6261dc95eb0}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!main\+Panel@{main\+Panel}}
+\index{main\+Panel@{main\+Panel}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{main\+Panel}{mainPanel}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Panel main\+Panel\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_af6ba70393d92ce2a983bf47ab956b019}\label{classWildlifeTrackingApp_1_1MainPage_af6ba70393d92ce2a983bf47ab956b019}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!name\+\_\+label@{name\+\_\+label}}
+\index{name\+\_\+label@{name\+\_\+label}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{name\+\_\+label}{name\_label}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label name\+\_\+label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_a6c60ee802abc7c2be3dda738a63abc86}\label{classWildlifeTrackingApp_1_1MainPage_a6c60ee802abc7c2be3dda738a63abc86}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!report\+\_\+label@{report\+\_\+label}}
+\index{report\+\_\+label@{report\+\_\+label}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{report\+\_\+label}{report\_label}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Label report\+\_\+label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_a910f81e378fc8c66e03a986cfa7c5b4d}\label{classWildlifeTrackingApp_1_1MainPage_a910f81e378fc8c66e03a986cfa7c5b4d}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!report\+\_\+tool\+Strip@{report\+\_\+tool\+Strip}}
+\index{report\+\_\+tool\+Strip@{report\+\_\+tool\+Strip}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{report\+\_\+tool\+Strip}{report\_toolStrip}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Tool\+Strip report\+\_\+tool\+Strip\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_ad9987c4b3ca7748f440a16a357ce86e5}\label{classWildlifeTrackingApp_1_1MainPage_ad9987c4b3ca7748f440a16a357ce86e5}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!title\+\_\+\+Panel@{title\+\_\+\+Panel}}
+\index{title\+\_\+\+Panel@{title\+\_\+\+Panel}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{title\+\_\+\+Panel}{title\_Panel}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Panel title\+\_\+\+Panel\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1MainPage_a5fc9abb86e6110ecd61d0a1a7d740a8a}\label{classWildlifeTrackingApp_1_1MainPage_a5fc9abb86e6110ecd61d0a1a7d740a8a}} 
+\index{Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}!Log@{Log}}
+\index{Log@{Log}!Wildlife\+Tracking\+App\+::\+Main\+Page@{Wildlife\+Tracking\+App\+::\+Main\+Page}}
+\subsubsection{\texorpdfstring{Log}{Log}}
+{\footnotesize\ttfamily log4net.\+I\+Log Log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+View/\hyperlink{MainPage_8cs}{Main\+Page.\+cs}\item 
+View/\hyperlink{MainPage_8Designer_8cs}{Main\+Page.\+Designer.\+cs}\end{DoxyCompactItemize}

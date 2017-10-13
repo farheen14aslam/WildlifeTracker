@@ -1,0 +1,189 @@
+\hypertarget{interfaceWildLifeTracker_1_1ICategoryService}{}\section{I\+Category\+Service}
+\label{interfaceWildLifeTracker_1_1ICategoryService}\index{I\+Category\+Service@{I\+Category\+Service}}
+
+
+The interface exposes all the A\+P\+Is for category details  
+
+
+Inheritance diagram for I\+Category\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceWildLifeTracker_1_1ICategoryService}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1CategoryResponse}{Category\+Response} \hyperlink{interfaceWildLifeTracker_1_1ICategoryService_ab22f6cdfb39adc2607dc86cb100889fc}{Add\+Category} (\hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} category\+Details)
+\begin{DoxyCompactList}\small\item\em Adds a new category. 
+\begin{DoxyParams}{Parameters}
+{\em category\+Details} & The category details to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the category details for the newly created category or throws Exception if there is error
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1CategoryResponse}{Category\+Response} \hyperlink{interfaceWildLifeTracker_1_1ICategoryService_a6479e2a6945b14d40e8c57642e9d2665}{Delete\+Category} (string category\+Id)
+\begin{DoxyCompactList}\small\item\em Delete the category details. 
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & the category id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the animal details of animal that is deleted
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1CategoryResponse}{Category\+Response} \hyperlink{interfaceWildLifeTracker_1_1ICategoryService_af5ed969c812807a721f06819c9b22356}{Get\+Categories} ()
+\begin{DoxyCompactList}\small\item\em Retrieves all the categories. \begin{DoxyReturn}{Returns}
+Returns all the categories details
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1CategoryResponse}{Category\+Response} \hyperlink{interfaceWildLifeTracker_1_1ICategoryService_ac989af6747cc8b28f508ef7a4645d22f}{Get\+Category} (string category\+Id)
+\begin{DoxyCompactList}\small\item\em Retrieves the category details when category\+Id is specified. 
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & the category id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the categories detail for given category Id
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1CategoryResponse}{Category\+Response} \hyperlink{interfaceWildLifeTracker_1_1ICategoryService_adbaa7c66fd8789233e4d6f91ab3a4a2f}{Update\+Category} (string category\+Id, \hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category} category\+Details)
+\begin{DoxyCompactList}\small\item\em Update an category details. 
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & the category id\\
+\hline
+\end{DoxyParams}
+/// 
+\begin{DoxyParams}{Parameters}
+{\em category\+Details} & the category details\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the category details of updated category
+\end{DoxyReturn}
+\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The interface exposes all the A\+P\+Is for category details 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1ICategoryService_ab22f6cdfb39adc2607dc86cb100889fc}\label{interfaceWildLifeTracker_1_1ICategoryService_ab22f6cdfb39adc2607dc86cb100889fc}} 
+\index{Wild\+Life\+Tracker\+::\+I\+Category\+Service@{Wild\+Life\+Tracker\+::\+I\+Category\+Service}!Add\+Category@{Add\+Category}}
+\index{Add\+Category@{Add\+Category}!Wild\+Life\+Tracker\+::\+I\+Category\+Service@{Wild\+Life\+Tracker\+::\+I\+Category\+Service}}
+\subsubsection{\texorpdfstring{Add\+Category()}{AddCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1CategoryResponse}{Category\+Response} Add\+Category (\begin{DoxyParamCaption}\item[{\hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category}}]{category\+Details }\end{DoxyParamCaption})}
+
+
+
+Adds a new category. 
+\begin{DoxyParams}{Parameters}
+{\em category\+Details} & The category details to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the category details for the newly created category or throws Exception if there is error
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1CategoryService_ab22f6cdfb39adc2607dc86cb100889fc}{Category\+Service}.
+
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1ICategoryService_a6479e2a6945b14d40e8c57642e9d2665}\label{interfaceWildLifeTracker_1_1ICategoryService_a6479e2a6945b14d40e8c57642e9d2665}} 
+\index{Wild\+Life\+Tracker\+::\+I\+Category\+Service@{Wild\+Life\+Tracker\+::\+I\+Category\+Service}!Delete\+Category@{Delete\+Category}}
+\index{Delete\+Category@{Delete\+Category}!Wild\+Life\+Tracker\+::\+I\+Category\+Service@{Wild\+Life\+Tracker\+::\+I\+Category\+Service}}
+\subsubsection{\texorpdfstring{Delete\+Category()}{DeleteCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1CategoryResponse}{Category\+Response} Delete\+Category (\begin{DoxyParamCaption}\item[{string}]{category\+Id }\end{DoxyParamCaption})}
+
+
+
+Delete the category details. 
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & the category id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the animal details of animal that is deleted
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1CategoryService_a6479e2a6945b14d40e8c57642e9d2665}{Category\+Service}.
+
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1ICategoryService_af5ed969c812807a721f06819c9b22356}\label{interfaceWildLifeTracker_1_1ICategoryService_af5ed969c812807a721f06819c9b22356}} 
+\index{Wild\+Life\+Tracker\+::\+I\+Category\+Service@{Wild\+Life\+Tracker\+::\+I\+Category\+Service}!Get\+Categories@{Get\+Categories}}
+\index{Get\+Categories@{Get\+Categories}!Wild\+Life\+Tracker\+::\+I\+Category\+Service@{Wild\+Life\+Tracker\+::\+I\+Category\+Service}}
+\subsubsection{\texorpdfstring{Get\+Categories()}{GetCategories()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1CategoryResponse}{Category\+Response} Get\+Categories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves all the categories. \begin{DoxyReturn}{Returns}
+Returns all the categories details
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1CategoryService_af5ed969c812807a721f06819c9b22356}{Category\+Service}.
+
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1ICategoryService_ac989af6747cc8b28f508ef7a4645d22f}\label{interfaceWildLifeTracker_1_1ICategoryService_ac989af6747cc8b28f508ef7a4645d22f}} 
+\index{Wild\+Life\+Tracker\+::\+I\+Category\+Service@{Wild\+Life\+Tracker\+::\+I\+Category\+Service}!Get\+Category@{Get\+Category}}
+\index{Get\+Category@{Get\+Category}!Wild\+Life\+Tracker\+::\+I\+Category\+Service@{Wild\+Life\+Tracker\+::\+I\+Category\+Service}}
+\subsubsection{\texorpdfstring{Get\+Category()}{GetCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1CategoryResponse}{Category\+Response} Get\+Category (\begin{DoxyParamCaption}\item[{string}]{category\+Id }\end{DoxyParamCaption})}
+
+
+
+Retrieves the category details when category\+Id is specified. 
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & the category id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the categories detail for given category Id
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1CategoryService_ac989af6747cc8b28f508ef7a4645d22f}{Category\+Service}.
+
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1ICategoryService_adbaa7c66fd8789233e4d6f91ab3a4a2f}\label{interfaceWildLifeTracker_1_1ICategoryService_adbaa7c66fd8789233e4d6f91ab3a4a2f}} 
+\index{Wild\+Life\+Tracker\+::\+I\+Category\+Service@{Wild\+Life\+Tracker\+::\+I\+Category\+Service}!Update\+Category@{Update\+Category}}
+\index{Update\+Category@{Update\+Category}!Wild\+Life\+Tracker\+::\+I\+Category\+Service@{Wild\+Life\+Tracker\+::\+I\+Category\+Service}}
+\subsubsection{\texorpdfstring{Update\+Category()}{UpdateCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1CategoryResponse}{Category\+Response} Update\+Category (\begin{DoxyParamCaption}\item[{string}]{category\+Id,  }\item[{\hyperlink{classWildLifeTracker_1_1Models_1_1Category}{Category}}]{category\+Details }\end{DoxyParamCaption})}
+
+
+
+Update an category details. 
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & the category id\\
+\hline
+\end{DoxyParams}
+/// 
+\begin{DoxyParams}{Parameters}
+{\em category\+Details} & the category details\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the category details of updated category
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1CategoryService_adbaa7c66fd8789233e4d6f91ab3a4a2f}{Category\+Service}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wild\+Life\+Tracker/\+Services/\hyperlink{ICategoryServices_8cs}{I\+Category\+Services.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,115 @@
+\hypertarget{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService}{}\section{I\+Tracking\+Info\+Service}
+\label{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService}\index{I\+Tracking\+Info\+Service@{I\+Tracking\+Info\+Service}}
+
+
+The interface exposes all the A\+P\+Is for tracking details  
+
+
+Inheritance diagram for I\+Tracking\+Info\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info} \hyperlink{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService_a25bb0b990b8fd5649a97a10d14faecd2}{Add\+Tracking} (\hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info} gps\+Details)
+\begin{DoxyCompactList}\small\item\em Adds a new tracking info. 
+\begin{DoxyParams}{Parameters}
+{\em gps\+Details} & The G\+PS details to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the gps details for the newly created G\+PS info or throws Exception if there is error
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1TrackingInfoResponse}{Tracking\+Info\+Response} \hyperlink{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService_a858073f81f74fcdf93b69fe464b13e84}{Get\+All\+Animals\+Location} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the latest position of the animals for all the category. \begin{DoxyReturn}{Returns}
+Returns the latest G\+PS position for all animals in all category
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1TrackingInfoResponse}{Tracking\+Info\+Response} \hyperlink{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService_af4b4cf67d3e3a8ec3e01041262c8f13a}{Get\+Animals\+Location\+Per\+Category} (string category\+Id)
+\begin{DoxyCompactList}\small\item\em Retrieves the latest position of the animals when the category is specified. 
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & The category Id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the latest G\+PS position for the selected category
+\end{DoxyReturn}
+\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The interface exposes all the A\+P\+Is for tracking details 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService_a25bb0b990b8fd5649a97a10d14faecd2}\label{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService_a25bb0b990b8fd5649a97a10d14faecd2}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Tracking\+Info\+Service}!Add\+Tracking@{Add\+Tracking}}
+\index{Add\+Tracking@{Add\+Tracking}!Wild\+Life\+Tracker\+::\+Services\+::\+I\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Tracking\+Info\+Service}}
+\subsubsection{\texorpdfstring{Add\+Tracking()}{AddTracking()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info} Add\+Tracking (\begin{DoxyParamCaption}\item[{\hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info}}]{gps\+Details }\end{DoxyParamCaption})}
+
+
+
+Adds a new tracking info. 
+\begin{DoxyParams}{Parameters}
+{\em gps\+Details} & The G\+PS details to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the gps details for the newly created G\+PS info or throws Exception if there is error
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1Services_1_1TrackingInfoService_a25bb0b990b8fd5649a97a10d14faecd2}{Tracking\+Info\+Service}.
+
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService_a858073f81f74fcdf93b69fe464b13e84}\label{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService_a858073f81f74fcdf93b69fe464b13e84}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Tracking\+Info\+Service}!Get\+All\+Animals\+Location@{Get\+All\+Animals\+Location}}
+\index{Get\+All\+Animals\+Location@{Get\+All\+Animals\+Location}!Wild\+Life\+Tracker\+::\+Services\+::\+I\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Tracking\+Info\+Service}}
+\subsubsection{\texorpdfstring{Get\+All\+Animals\+Location()}{GetAllAnimalsLocation()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1TrackingInfoResponse}{Tracking\+Info\+Response} Get\+All\+Animals\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the latest position of the animals for all the category. \begin{DoxyReturn}{Returns}
+Returns the latest G\+PS position for all animals in all category
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1Services_1_1TrackingInfoService_a858073f81f74fcdf93b69fe464b13e84}{Tracking\+Info\+Service}.
+
+\mbox{\Hypertarget{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService_af4b4cf67d3e3a8ec3e01041262c8f13a}\label{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService_af4b4cf67d3e3a8ec3e01041262c8f13a}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Tracking\+Info\+Service}!Get\+Animals\+Location\+Per\+Category@{Get\+Animals\+Location\+Per\+Category}}
+\index{Get\+Animals\+Location\+Per\+Category@{Get\+Animals\+Location\+Per\+Category}!Wild\+Life\+Tracker\+::\+Services\+::\+I\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+I\+Tracking\+Info\+Service}}
+\subsubsection{\texorpdfstring{Get\+Animals\+Location\+Per\+Category()}{GetAnimalsLocationPerCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1TrackingInfoResponse}{Tracking\+Info\+Response} Get\+Animals\+Location\+Per\+Category (\begin{DoxyParamCaption}\item[{string}]{category\+Id }\end{DoxyParamCaption})}
+
+
+
+Retrieves the latest position of the animals when the category is specified. 
+\begin{DoxyParams}{Parameters}
+{\em category\+Id} & The category Id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the latest G\+PS position for the selected category
+\end{DoxyReturn}
+
+
+
+
+Implemented in \hyperlink{classWildLifeTracker_1_1Services_1_1TrackingInfoService_af4b4cf67d3e3a8ec3e01041262c8f13a}{Tracking\+Info\+Service}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wild\+Life\+Tracker/\+Services/\hyperlink{ITrackingInfoService_8cs}{I\+Tracking\+Info\+Service.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,120 @@
+\hypertarget{classWildLifeTracker_1_1Services_1_1TrackingInfoService}{}\section{Tracking\+Info\+Service}
+\label{classWildLifeTracker_1_1Services_1_1TrackingInfoService}\index{Tracking\+Info\+Service@{Tracking\+Info\+Service}}
+
+
+Tracking Service to perform different operations.  
+
+
+Inheritance diagram for Tracking\+Info\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWildLifeTracker_1_1Services_1_1TrackingInfoService}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildLifeTracker_1_1Services_1_1TrackingInfoService_ac3cacf8f797148311595b1403308b6cf}{Tracking\+Info\+Service} ()
+\begin{DoxyCompactList}\small\item\em Constructor that intialize log4net in class \end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info} \hyperlink{classWildLifeTracker_1_1Services_1_1TrackingInfoService_a25bb0b990b8fd5649a97a10d14faecd2}{Add\+Tracking} (\hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info} gps\+Details)
+\begin{DoxyCompactList}\small\item\em Add the tracking info (Location of animal) \end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1TrackingInfoResponse}{Tracking\+Info\+Response} \hyperlink{classWildLifeTracker_1_1Services_1_1TrackingInfoService_a858073f81f74fcdf93b69fe464b13e84}{Get\+All\+Animals\+Location} ()
+\begin{DoxyCompactList}\small\item\em Retrieves all the animal\textquotesingle{}s latest position for all the categories \end{DoxyCompactList}\item 
+\hyperlink{classWildLifeTracker_1_1Response_1_1TrackingInfoResponse}{Tracking\+Info\+Response} \hyperlink{classWildLifeTracker_1_1Services_1_1TrackingInfoService_af4b4cf67d3e3a8ec3e01041262c8f13a}{Get\+Animals\+Location\+Per\+Category} (string category\+Id)
+\begin{DoxyCompactList}\small\item\em Retrieves all the animal\textquotesingle{}s latest position for the selected category \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo}{Tracking\+Repo} \hyperlink{classWildLifeTracker_1_1Services_1_1TrackingInfoService_a06c9afa34640dfb7799f60c2bf14f821}{tracking\+Repo} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Tracking Service to perform different operations. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Services_1_1TrackingInfoService_ac3cacf8f797148311595b1403308b6cf}\label{classWildLifeTracker_1_1Services_1_1TrackingInfoService_ac3cacf8f797148311595b1403308b6cf}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service}!Tracking\+Info\+Service@{Tracking\+Info\+Service}}
+\index{Tracking\+Info\+Service@{Tracking\+Info\+Service}!Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service}}
+\subsubsection{\texorpdfstring{Tracking\+Info\+Service()}{TrackingInfoService()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Services_1_1TrackingInfoService}{Tracking\+Info\+Service} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor that intialize log4net in class 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Services_1_1TrackingInfoService_a25bb0b990b8fd5649a97a10d14faecd2}\label{classWildLifeTracker_1_1Services_1_1TrackingInfoService_a25bb0b990b8fd5649a97a10d14faecd2}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service}!Add\+Tracking@{Add\+Tracking}}
+\index{Add\+Tracking@{Add\+Tracking}!Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service}}
+\subsubsection{\texorpdfstring{Add\+Tracking()}{AddTracking()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info} Add\+Tracking (\begin{DoxyParamCaption}\item[{\hyperlink{classWildLifeTracker_1_1Models_1_1GPSTrackingInfo}{G\+P\+S\+Tracking\+Info}}]{gps\+Details }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add the tracking info (Location of animal) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em animal\+Details} & The animal details\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The details of animal that is added
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService_a25bb0b990b8fd5649a97a10d14faecd2}{I\+Tracking\+Info\+Service}.
+
+\mbox{\Hypertarget{classWildLifeTracker_1_1Services_1_1TrackingInfoService_a858073f81f74fcdf93b69fe464b13e84}\label{classWildLifeTracker_1_1Services_1_1TrackingInfoService_a858073f81f74fcdf93b69fe464b13e84}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service}!Get\+All\+Animals\+Location@{Get\+All\+Animals\+Location}}
+\index{Get\+All\+Animals\+Location@{Get\+All\+Animals\+Location}!Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service}}
+\subsubsection{\texorpdfstring{Get\+All\+Animals\+Location()}{GetAllAnimalsLocation()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1TrackingInfoResponse}{Tracking\+Info\+Response} Get\+All\+Animals\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves all the animal\textquotesingle{}s latest position for all the categories 
+
+\begin{DoxyReturn}{Returns}
+Details of animals, category and the tracking information of all the animals in all category
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService_a858073f81f74fcdf93b69fe464b13e84}{I\+Tracking\+Info\+Service}.
+
+\mbox{\Hypertarget{classWildLifeTracker_1_1Services_1_1TrackingInfoService_af4b4cf67d3e3a8ec3e01041262c8f13a}\label{classWildLifeTracker_1_1Services_1_1TrackingInfoService_af4b4cf67d3e3a8ec3e01041262c8f13a}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service}!Get\+Animals\+Location\+Per\+Category@{Get\+Animals\+Location\+Per\+Category}}
+\index{Get\+Animals\+Location\+Per\+Category@{Get\+Animals\+Location\+Per\+Category}!Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service}}
+\subsubsection{\texorpdfstring{Get\+Animals\+Location\+Per\+Category()}{GetAnimalsLocationPerCategory()}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Response_1_1TrackingInfoResponse}{Tracking\+Info\+Response} Get\+Animals\+Location\+Per\+Category (\begin{DoxyParamCaption}\item[{string}]{category\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retrieves all the animal\textquotesingle{}s latest position for the selected category 
+
+\begin{DoxyReturn}{Returns}
+Details of animals, category and the tracking information of all the animals in selected category
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceWildLifeTracker_1_1Services_1_1ITrackingInfoService_af4b4cf67d3e3a8ec3e01041262c8f13a}{I\+Tracking\+Info\+Service}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classWildLifeTracker_1_1Services_1_1TrackingInfoService_a06c9afa34640dfb7799f60c2bf14f821}\label{classWildLifeTracker_1_1Services_1_1TrackingInfoService_a06c9afa34640dfb7799f60c2bf14f821}} 
+\index{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service}!tracking\+Repo@{tracking\+Repo}}
+\index{tracking\+Repo@{tracking\+Repo}!Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service@{Wild\+Life\+Tracker\+::\+Services\+::\+Tracking\+Info\+Service}}
+\subsubsection{\texorpdfstring{tracking\+Repo}{trackingRepo}}
+{\footnotesize\ttfamily \hyperlink{classWildLifeTracker_1_1Repository_1_1TrackingRepo}{Tracking\+Repo} tracking\+Repo = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Wild\+Life\+Tracker/\+Services/\hyperlink{TrackingInfoService_8svc_8cs}{Tracking\+Info\+Service.\+svc.\+cs}\end{DoxyCompactItemize}

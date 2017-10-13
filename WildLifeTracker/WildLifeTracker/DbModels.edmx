@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="game_reserve_dbModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblanimal">
+          <Key>
+            <PropertyRef Name="animalId" />
+          </Key>
+          <Property Name="animalId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="animalName" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="createdAt" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="gpsDeviceId" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="categoryId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblcategory">
+          <Key>
+            <PropertyRef Name="categoryId" />
+          </Key>
+          <Property Name="categoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="categoryName" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="colorIndication" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="categoryDesc" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tblgpstracking">
+          <Key>
+            <PropertyRef Name="trackingId" />
+          </Key>
+          <Property Name="trackingId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="animalId" Type="int" Nullable="false" />
+          <Property Name="latitude" Type="double" Nullable="false" />
+          <Property Name="longitude" Type="double" Nullable="false" />
+          <Property Name="createdAt" Type="datetime" Precision="0" Nullable="false" />
+        </EntityType>
+        <Association Name="tblAnimal_ibfk_1">
+          <End Role="tblcategory" Type="Self.tblcategory" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tblanimal" Type="Self.tblanimal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblcategory">
+              <PropertyRef Name="categoryId" />
+            </Principal>
+            <Dependent Role="tblanimal">
+              <PropertyRef Name="categoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tblgpstracking_ibfk_1">
+          <End Role="tblanimal" Type="Self.tblanimal" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tblgpstracking" Type="Self.tblgpstracking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblanimal">
+              <PropertyRef Name="animalId" />
+            </Principal>
+            <Dependent Role="tblgpstracking">
+              <PropertyRef Name="animalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="game_reserve_dbModelStoreContainer">
+          <EntitySet Name="tblanimal" EntityType="Self.tblanimal" Schema="game_reserve_db" store:Type="Tables" />
+          <EntitySet Name="tblcategory" EntityType="Self.tblcategory" Schema="game_reserve_db" store:Type="Tables" />
+          <EntitySet Name="tblgpstracking" EntityType="Self.tblgpstracking" Schema="game_reserve_db" store:Type="Tables" />
+          <AssociationSet Name="tblAnimal_ibfk_1" Association="Self.tblAnimal_ibfk_1">
+            <End Role="tblcategory" EntitySet="tblcategory" />
+            <End Role="tblanimal" EntitySet="tblanimal" />
+          </AssociationSet>
+          <AssociationSet Name="tblgpstracking_ibfk_1" Association="Self.tblgpstracking_ibfk_1">
+            <End Role="tblanimal" EntitySet="tblanimal" />
+            <End Role="tblgpstracking" EntitySet="tblgpstracking" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="game_reserve_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblanimal">
+          <Key>
+            <PropertyRef Name="animalId" />
+          </Key>
+          <Property Name="animalId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="animalName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="createdAt" Type="DateTime" Nullable="false" />
+          <Property Name="gpsDeviceId" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="categoryId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tblcategory" Relationship="Self.tblAnimal_ibfk_1" FromRole="tblanimal" ToRole="tblcategory" />
+          <NavigationProperty Name="tblgpstrackings" Relationship="Self.tblgpstracking_ibfk_1" FromRole="tblanimal" ToRole="tblgpstracking" />
+        </EntityType>
+        <EntityType Name="tblcategory">
+          <Key>
+            <PropertyRef Name="categoryId" />
+          </Key>
+          <Property Name="categoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="categoryName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="colorIndication" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="categoryDesc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tblanimals" Relationship="Self.tblAnimal_ibfk_1" FromRole="tblcategory" ToRole="tblanimal" />
+        </EntityType>
+        <EntityType Name="tblgpstracking">
+          <Key>
+            <PropertyRef Name="trackingId" />
+          </Key>
+          <Property Name="trackingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="animalId" Type="Int32" Nullable="false" />
+          <Property Name="latitude" Type="Double" Nullable="false" />
+          <Property Name="longitude" Type="Double" Nullable="false" />
+          <Property Name="createdAt" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="tblanimal" Relationship="Self.tblgpstracking_ibfk_1" FromRole="tblgpstracking" ToRole="tblanimal" />
+        </EntityType>
+        <Association Name="tblAnimal_ibfk_1">
+          <End Role="tblcategory" Type="Self.tblcategory" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tblanimal" Type="Self.tblanimal" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblcategory">
+              <PropertyRef Name="categoryId" />
+            </Principal>
+            <Dependent Role="tblanimal">
+              <PropertyRef Name="categoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tblgpstracking_ibfk_1">
+          <End Role="tblanimal" Type="Self.tblanimal" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="tblgpstracking" Type="Self.tblgpstracking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblanimal">
+              <PropertyRef Name="animalId" />
+            </Principal>
+            <Dependent Role="tblgpstracking">
+              <PropertyRef Name="animalId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="game_reserve_dbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblanimals" EntityType="Self.tblanimal" />
+          <EntitySet Name="tblcategories" EntityType="Self.tblcategory" />
+          <EntitySet Name="tblgpstrackings" EntityType="Self.tblgpstracking" />
+          <AssociationSet Name="tblAnimal_ibfk_1" Association="Self.tblAnimal_ibfk_1">
+            <End Role="tblcategory" EntitySet="tblcategories" />
+            <End Role="tblanimal" EntitySet="tblanimals" />
+          </AssociationSet>
+          <AssociationSet Name="tblgpstracking_ibfk_1" Association="Self.tblgpstracking_ibfk_1">
+            <End Role="tblanimal" EntitySet="tblanimals" />
+            <End Role="tblgpstracking" EntitySet="tblgpstrackings" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="game_reserve_dbModelStoreContainer" CdmEntityContainer="game_reserve_dbEntities">
+          <EntitySetMapping Name="tblanimals">
+            <EntityTypeMapping TypeName="game_reserve_dbModel.tblanimal">
+              <MappingFragment StoreEntitySet="tblanimal">
+                <ScalarProperty Name="animalId" ColumnName="animalId" />
+                <ScalarProperty Name="animalName" ColumnName="animalName" />
+                <ScalarProperty Name="createdAt" ColumnName="createdAt" />
+                <ScalarProperty Name="gpsDeviceId" ColumnName="gpsDeviceId" />
+                <ScalarProperty Name="categoryId" ColumnName="categoryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblcategories">
+            <EntityTypeMapping TypeName="game_reserve_dbModel.tblcategory">
+              <MappingFragment StoreEntitySet="tblcategory">
+                <ScalarProperty Name="categoryId" ColumnName="categoryId" />
+                <ScalarProperty Name="categoryName" ColumnName="categoryName" />
+                <ScalarProperty Name="colorIndication" ColumnName="colorIndication" />
+                <ScalarProperty Name="categoryDesc" ColumnName="categoryDesc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblgpstrackings">
+            <EntityTypeMapping TypeName="game_reserve_dbModel.tblgpstracking">
+              <MappingFragment StoreEntitySet="tblgpstracking">
+                <ScalarProperty Name="trackingId" ColumnName="trackingId" />
+                <ScalarProperty Name="animalId" ColumnName="animalId" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
+                <ScalarProperty Name="createdAt" ColumnName="createdAt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

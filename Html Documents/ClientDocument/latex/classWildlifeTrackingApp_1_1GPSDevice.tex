@@ -1,0 +1,267 @@
+\hypertarget{classWildlifeTrackingApp_1_1GPSDevice}{}\section{G\+P\+S\+Device}
+\label{classWildlifeTrackingApp_1_1GPSDevice}\index{G\+P\+S\+Device@{G\+P\+S\+Device}}
+
+
+Form class that adds loads the list of new animals , add animal ,delete animal and edit animal.  
+
+
+Inheritance diagram for G\+P\+S\+Device\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWildlifeTrackingApp_1_1GPSDevice}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWildlifeTrackingApp_1_1GPSDevice_a4642693badcba7273e5031b821d3656c}{G\+P\+S\+Device} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_aad96a74a8e07bceb571a64a3355b779d}{selected\+Row}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_a849c3c7f8d08104f0cdb46bee9fe6389}{Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static log4net.\+I\+Log \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_a5fc9abb86e6110ecd61d0a1a7d740a8a}{Log}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_ae56b21bee08f5cad9858a264ccc21fd5}{add\+\_\+button\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for add button click of adding new animal . \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_af87e0d54e9971bfe9ccba3a85841f619}{data\+Grid} ()
+\begin{DoxyCompactList}\small\item\em It loads data to datagrid view. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_a28f46cdb401c2c8da3f8e117eaedf977}{delete\+\_\+button\+\_\+\+Click} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for delete button click. \end{DoxyCompactList}\item 
+Data\+Table \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_a72673ff63cce544357c7d37b7277d2a9}{get\+All\+Animal\+List} ()
+\begin{DoxyCompactList}\small\item\em Collects categroy details and saves as a datatable. \end{DoxyCompactList}\item 
+\hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal} \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_aa77ac6fe5337cfc839398bafce2995c9}{Get\+Animal\+Details} (string animal\+Name, int category\+Id, string gps\+Device\+Id)
+\item 
+void \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_a6ea679908b776bed849fbdc9eb2e3e48}{gps\+Device\+\_\+\+Activated} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for activation of form. \end{DoxyCompactList}\item 
+void \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_a6405d5db675d5338663195a4d12b4c9f}{Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+System.\+Windows.\+Forms.\+Button \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_a7f1dbd5813451728f923cb88a3469cb6}{add\+\_\+button}
+\item 
+List$<$ \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal} $>$ \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_af6ea227040809ec847f3ab49aef0187c}{all\+Animals\+Located}
+\item 
+Data\+Table \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_adb239b554c7bf520291b6165244efd42}{animal\+Details}
+\item 
+System.\+Component\+Model.\+I\+Container \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_a02595f1c09713bb71dcb2fbbfc7ffa4b}{components} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+System.\+Windows.\+Forms.\+Button \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_a84dcb7863c4f709001a644ff98f22414}{delete\+\_\+button}
+\item 
+System.\+Windows.\+Forms.\+Data\+Grid\+View \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_a39b3e0567cbf561947dccf8b8fcd9db1}{gps\+\_\+data\+Grid\+View}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly log4net.\+I\+Log \hyperlink{classWildlifeTrackingApp_1_1GPSDevice_ae6c6142b8525b2f4ac6ee6e003b3106f}{log}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Form class that adds loads the list of new animals , add animal ,delete animal and edit animal. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_a4642693badcba7273e5031b821d3656c}\label{classWildlifeTrackingApp_1_1GPSDevice_a4642693badcba7273e5031b821d3656c}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!G\+P\+S\+Device@{G\+P\+S\+Device}}
+\index{G\+P\+S\+Device@{G\+P\+S\+Device}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{G\+P\+S\+Device()}{GPSDevice()}}
+{\footnotesize\ttfamily \hyperlink{classWildlifeTrackingApp_1_1GPSDevice}{G\+P\+S\+Device} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_ae56b21bee08f5cad9858a264ccc21fd5}\label{classWildlifeTrackingApp_1_1GPSDevice_ae56b21bee08f5cad9858a264ccc21fd5}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!add\+\_\+button\+\_\+\+Click@{add\+\_\+button\+\_\+\+Click}}
+\index{add\+\_\+button\+\_\+\+Click@{add\+\_\+button\+\_\+\+Click}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{add\+\_\+button\+\_\+\+Click()}{add\_button\_Click()}}
+{\footnotesize\ttfamily void add\+\_\+button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for add button click of adding new animal . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_af87e0d54e9971bfe9ccba3a85841f619}\label{classWildlifeTrackingApp_1_1GPSDevice_af87e0d54e9971bfe9ccba3a85841f619}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!data\+Grid@{data\+Grid}}
+\index{data\+Grid@{data\+Grid}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{data\+Grid()}{dataGrid()}}
+{\footnotesize\ttfamily void data\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+It loads data to datagrid view. 
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_a28f46cdb401c2c8da3f8e117eaedf977}\label{classWildlifeTrackingApp_1_1GPSDevice_a28f46cdb401c2c8da3f8e117eaedf977}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!delete\+\_\+button\+\_\+\+Click@{delete\+\_\+button\+\_\+\+Click}}
+\index{delete\+\_\+button\+\_\+\+Click@{delete\+\_\+button\+\_\+\+Click}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{delete\+\_\+button\+\_\+\+Click()}{delete\_button\_Click()}}
+{\footnotesize\ttfamily void delete\+\_\+button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for delete button click. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_a849c3c7f8d08104f0cdb46bee9fe6389}\label{classWildlifeTrackingApp_1_1GPSDevice_a849c3c7f8d08104f0cdb46bee9fe6389}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_a72673ff63cce544357c7d37b7277d2a9}\label{classWildlifeTrackingApp_1_1GPSDevice_a72673ff63cce544357c7d37b7277d2a9}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!get\+All\+Animal\+List@{get\+All\+Animal\+List}}
+\index{get\+All\+Animal\+List@{get\+All\+Animal\+List}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{get\+All\+Animal\+List()}{getAllAnimalList()}}
+{\footnotesize\ttfamily Data\+Table get\+All\+Animal\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Collects categroy details and saves as a datatable. 
+
+\begin{DoxyReturn}{Returns}
+Returns category data as datatable
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_aa77ac6fe5337cfc839398bafce2995c9}\label{classWildlifeTrackingApp_1_1GPSDevice_aa77ac6fe5337cfc839398bafce2995c9}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!Get\+Animal\+Details@{Get\+Animal\+Details}}
+\index{Get\+Animal\+Details@{Get\+Animal\+Details}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{Get\+Animal\+Details()}{GetAnimalDetails()}}
+{\footnotesize\ttfamily \hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal} Get\+Animal\+Details (\begin{DoxyParamCaption}\item[{string}]{animal\+Name,  }\item[{int}]{category\+Id,  }\item[{string}]{gps\+Device\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_a6ea679908b776bed849fbdc9eb2e3e48}\label{classWildlifeTrackingApp_1_1GPSDevice_a6ea679908b776bed849fbdc9eb2e3e48}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!gps\+Device\+\_\+\+Activated@{gps\+Device\+\_\+\+Activated}}
+\index{gps\+Device\+\_\+\+Activated@{gps\+Device\+\_\+\+Activated}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{gps\+Device\+\_\+\+Activated()}{gpsDevice\_Activated()}}
+{\footnotesize\ttfamily void gps\+Device\+\_\+\+Activated (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Event handler for activation of form. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender Object\\
+\hline
+{\em e} & Event Argument\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_a6405d5db675d5338663195a4d12b4c9f}\label{classWildlifeTrackingApp_1_1GPSDevice_a6405d5db675d5338663195a4d12b4c9f}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!Initialize\+Component@{Initialize\+Component}}
+\index{Initialize\+Component@{Initialize\+Component}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{Initialize\+Component()}{InitializeComponent()}}
+{\footnotesize\ttfamily void Initialize\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Required method for Designer support -\/ do not modify the contents of this method with the code editor. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_a7f1dbd5813451728f923cb88a3469cb6}\label{classWildlifeTrackingApp_1_1GPSDevice_a7f1dbd5813451728f923cb88a3469cb6}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!add\+\_\+button@{add\+\_\+button}}
+\index{add\+\_\+button@{add\+\_\+button}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{add\+\_\+button}{add\_button}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button add\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_af6ea227040809ec847f3ab49aef0187c}\label{classWildlifeTrackingApp_1_1GPSDevice_af6ea227040809ec847f3ab49aef0187c}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!all\+Animals\+Located@{all\+Animals\+Located}}
+\index{all\+Animals\+Located@{all\+Animals\+Located}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{all\+Animals\+Located}{allAnimalsLocated}}
+{\footnotesize\ttfamily List$<$\hyperlink{classWildlifeTrackingApp_1_1Models_1_1Animal}{Models.\+Animal}$>$ all\+Animals\+Located\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_adb239b554c7bf520291b6165244efd42}\label{classWildlifeTrackingApp_1_1GPSDevice_adb239b554c7bf520291b6165244efd42}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!animal\+Details@{animal\+Details}}
+\index{animal\+Details@{animal\+Details}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{animal\+Details}{animalDetails}}
+{\footnotesize\ttfamily Data\+Table animal\+Details\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_a02595f1c09713bb71dcb2fbbfc7ffa4b}\label{classWildlifeTrackingApp_1_1GPSDevice_a02595f1c09713bb71dcb2fbbfc7ffa4b}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!components@{components}}
+\index{components@{components}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{components}{components}}
+{\footnotesize\ttfamily System.\+Component\+Model.\+I\+Container components = null\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Required designer variable. 
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_a84dcb7863c4f709001a644ff98f22414}\label{classWildlifeTrackingApp_1_1GPSDevice_a84dcb7863c4f709001a644ff98f22414}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!delete\+\_\+button@{delete\+\_\+button}}
+\index{delete\+\_\+button@{delete\+\_\+button}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{delete\+\_\+button}{delete\_button}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Button delete\+\_\+button\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_a39b3e0567cbf561947dccf8b8fcd9db1}\label{classWildlifeTrackingApp_1_1GPSDevice_a39b3e0567cbf561947dccf8b8fcd9db1}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!gps\+\_\+data\+Grid\+View@{gps\+\_\+data\+Grid\+View}}
+\index{gps\+\_\+data\+Grid\+View@{gps\+\_\+data\+Grid\+View}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{gps\+\_\+data\+Grid\+View}{gps\_dataGridView}}
+{\footnotesize\ttfamily System.\+Windows.\+Forms.\+Data\+Grid\+View gps\+\_\+data\+Grid\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_ae6c6142b8525b2f4ac6ee6e003b3106f}\label{classWildlifeTrackingApp_1_1GPSDevice_ae6c6142b8525b2f4ac6ee6e003b3106f}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!log@{log}}
+\index{log@{log}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{log}{log}}
+{\footnotesize\ttfamily readonly log4net.\+I\+Log log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= log4net.LogManager.GetLogger
+        (\hyperlink{namespaceSystem}{System}.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+\end{DoxyCode}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_aad96a74a8e07bceb571a64a3355b779d}\label{classWildlifeTrackingApp_1_1GPSDevice_aad96a74a8e07bceb571a64a3355b779d}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!selected\+Row@{selected\+Row}}
+\index{selected\+Row@{selected\+Row}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{selected\+Row}{selectedRow}}
+{\footnotesize\ttfamily int selected\+Row}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classWildlifeTrackingApp_1_1GPSDevice_a5fc9abb86e6110ecd61d0a1a7d740a8a}\label{classWildlifeTrackingApp_1_1GPSDevice_a5fc9abb86e6110ecd61d0a1a7d740a8a}} 
+\index{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}!Log@{Log}}
+\index{Log@{Log}!Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device@{Wildlife\+Tracking\+App\+::\+G\+P\+S\+Device}}
+\subsubsection{\texorpdfstring{Log}{Log}}
+{\footnotesize\ttfamily log4net.\+I\+Log Log\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+View/\hyperlink{GPSDevice_8cs}{G\+P\+S\+Device.\+cs}\item 
+View/\hyperlink{GPSDevice_8Designer_8cs}{G\+P\+S\+Device.\+Designer.\+cs}\end{DoxyCompactItemize}
